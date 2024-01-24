@@ -980,3 +980,52 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2024.01.24-14.15.53:508][317]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Test/BP_Test" FILE="../../../../gittest/UENetWork/Saved/Autosaves/Game/UENetWork/Test/BP_Test_Auto1.uasset" SILENT=false AUTOSAVING=true
 [2024.01.24-14.15.53:572][317]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/BP_Test_Auto1ACA85FF045BFE68D41235697F4BA875B.tmp' to '../../../../gittest/UENetWork/Saved/Autosaves/Game/UENetWork/Test/BP_Test_Auto1.uasset'
 [2024.01.24-14.15.53:572][317]LogFileHelpers: Auto-saving content packages took 0.082
+[2024.01.24-15.04.44:543][557]LogUObjectHash: Compacting FUObjectHashTables data took   8.32ms
+[2024.01.24-15.04.45:747][557]LogSlate: Window '保存内容' being destroyed
+[2024.01.24-15.04.45:772][557]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Test/BP_Test" FILE="../../../../gittest/UENetWork/Content/UENetWork/Test/BP_Test.uasset" SILENT=true
+[2024.01.24-15.04.45:782][557]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/BP_Test3B6EE0B1488D272488945FA143F5EF5B.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Test/BP_Test.uasset'
+[2024.01.24-15.04.45:799][557]AssetCheck: New page: 资产保存：BP_Test
+[2024.01.24-15.04.45:799][557]LogContentValidation: Display: 正在验证Blueprint /Game/UENetWork/Test/BP_Test.BP_Test
+[2024.01.24-15.04.57:544][796]LogSlate: Took 0.018799 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.01.24-15.05.02:408][796]LogSlate: Window '将关卡另存为' being destroyed
+[2024.01.24-15.05.02:547][796]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.24-15.05.02:585][796]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2024.01.24-15.05.02:659][796]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap5B8290C6434FF3ED4A7B129EF8EADC88.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap'
+[2024.01.24-15.05.02:701][796]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap_BuiltData" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset" SILENT=true
+[2024.01.24-15.05.02:821][796]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap_BuiltDataE695DA77426EE645ED0847A538221589.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset'
+[2024.01.24-15.05.02:834][796]LogFileHelpers: Saving map 'NewMap' took 0.418
+[2024.01.24-15.05.02:843][796]AssetCheck: New page: 资产保存：多个资产
+[2024.01.24-15.05.02:843][796]LogContentValidation: Display: 正在验证MapBuildDataRegistry /Game/UENetWork/Maps/NewMap_BuiltData.NewMap_BuiltData
+[2024.01.24-15.05.02:843][796]LogContentValidation: Display: 正在验证World /Game/UENetWork/Maps/NewMap.NewMap
+[2024.01.24-15.05.04:337][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.24-15.05.04:406][911]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2024.01.24-15.05.04:412][911]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMapCD6014A24AF1E9AE17B4B99C588A3868.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap'
+[2024.01.24-15.05.04:415][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap_BuiltData" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset" SILENT=true
+[2024.01.24-15.05.04:426][911]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap_BuiltDataEBCE01104494691642FEB49BA94FE9BC.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset'
+[2024.01.24-15.05.04:440][911]AssetCheck: New page: 资产保存：多个资产
+[2024.01.24-15.05.04:440][911]LogContentValidation: Display: 正在验证MapBuildDataRegistry /Game/UENetWork/Maps/NewMap_BuiltData.NewMap_BuiltData
+[2024.01.24-15.05.04:440][911]LogContentValidation: Display: 正在验证World /Game/UENetWork/Maps/NewMap.NewMap
+[2024.01.24-15.05.04:899][963]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.24-15.05.04:975][963]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.01.24-15.05.04:981][963]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap8B92A63A4ADBB6E9CECB7A8F3E72F192.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap'
+[2024.01.24-15.05.04:984][963]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap_BuiltData" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset" SILENT=true
+[2024.01.24-15.05.04:995][963]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap_BuiltDataAE5E13EB4DC55E3EEA7E26B31B29EFCC.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset'
+[2024.01.24-15.05.05:010][963]AssetCheck: New page: 资产保存：多个资产
+[2024.01.24-15.05.05:010][963]LogContentValidation: Display: 正在验证MapBuildDataRegistry /Game/UENetWork/Maps/NewMap_BuiltData.NewMap_BuiltData
+[2024.01.24-15.05.05:010][963]LogContentValidation: Display: 正在验证World /Game/UENetWork/Maps/NewMap.NewMap
+[2024.01.24-15.05.05:099][971]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.24-15.05.05:117][971]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2024.01.24-15.05.05:123][971]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMapC96052074D97B9C334F9ADB9E14773A5.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap'
+[2024.01.24-15.05.05:125][971]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap_BuiltData" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset" SILENT=true
+[2024.01.24-15.05.05:136][971]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap_BuiltData392932524B2AD3904FF94A9805B804B6.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset'
+[2024.01.24-15.05.05:151][971]AssetCheck: New page: 资产保存：多个资产
+[2024.01.24-15.05.05:151][971]LogContentValidation: Display: 正在验证MapBuildDataRegistry /Game/UENetWork/Maps/NewMap_BuiltData.NewMap_BuiltData
+[2024.01.24-15.05.05:151][971]LogContentValidation: Display: 正在验证World /Game/UENetWork/Maps/NewMap.NewMap
+[2024.01.24-15.05.05:288][985]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.24-15.05.05:306][985]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2024.01.24-15.05.05:312][985]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap7C7F2A064F5F16773CB777B992956292.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap.umap'
+[2024.01.24-15.05.05:314][985]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UENetWork/Maps/NewMap_BuiltData" FILE="../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset" SILENT=true
+[2024.01.24-15.05.05:327][985]LogSavePackage: Moving '../../../../gittest/UENetWork/Saved/NewMap_BuiltData9791410C46A91B1DD1D08AA60BD83C1A.tmp' to '../../../../gittest/UENetWork/Content/UENetWork/Maps/NewMap_BuiltData.uasset'
+[2024.01.24-15.05.05:340][985]AssetCheck: New page: 资产保存：多个资产
+[2024.01.24-15.05.05:340][985]LogContentValidation: Display: 正在验证MapBuildDataRegistry /Game/UENetWork/Maps/NewMap_BuiltData.NewMap_BuiltData
+[2024.01.24-15.05.05:340][985]LogContentValidation: Display: 正在验证World /Game/UENetWork/Maps/NewMap.NewMap
