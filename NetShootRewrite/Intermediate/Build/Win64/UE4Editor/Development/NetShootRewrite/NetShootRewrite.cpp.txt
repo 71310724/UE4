@@ -1,0 +1,2 @@
+D:\UE4\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\Definitions.NetShootRewrite.h
+D:\UE4\NetShootRewrite\Source\NetShootRewrite\NetShootRewrite.h

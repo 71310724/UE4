@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{3F9EF072-4D3E-3740-6AFB-22B45F6C46E4}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "NetShootRewrite",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
