@@ -1,6 +1,6 @@
-D:\UE4\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\Definitions.NetShootRewrite.h
-D:\UE4\NetShootRewrite\Source\NetShootRewrite\NetShootRewriteProjectile.h
-D:\UE4\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Inc\NetShootRewrite\NetShootRewriteProjectile.generated.h
+D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\Definitions.NetShootRewrite.h
+D:\GitHub\NetShootRewrite\Source\NetShootRewrite\NetShootRewriteProjectile.h
+D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Inc\NetShootRewrite\NetShootRewriteProjectile.generated.h
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h

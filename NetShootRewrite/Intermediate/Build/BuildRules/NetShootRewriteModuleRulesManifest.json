@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\UE4\\NetShootRewrite\\Source\\NetShootRewrite\\NetShootRewrite.Build.cs",
-		"D:\\UE4\\NetShootRewrite\\Source\\NetShootRewrite.Target.cs",
-		"D:\\UE4\\NetShootRewrite\\Source\\NetShootRewriteEditor.Target.cs"
+		"D:\\GitHub\\NetShootRewrite\\Source\\NetShootRewrite\\NetShootRewrite.Build.cs",
+		"D:\\GitHub\\NetShootRewrite\\Source\\NetShootRewrite.Target.cs",
+		"D:\\GitHub\\NetShootRewrite\\Source\\NetShootRewriteEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }
