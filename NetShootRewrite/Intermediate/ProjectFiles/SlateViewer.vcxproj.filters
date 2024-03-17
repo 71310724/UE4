@@ -4,37 +4,37 @@
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\SlateViewer.Target.cs" />
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\SlateViewer.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{B9A83790-39E3-49C0-9A34-B5999E086DC5}</UniqueIdentifier>
+      <UniqueIdentifier>{B38696FF-8EAC-448B-814E-071D9C13883A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Private\SlateViewerApp.cpp">
       <Filter>Private</Filter>
     </ClCompile>
     <Filter Include="Private\IOS">
-      <UniqueIdentifier>{E5E12CC2-9380-4A88-BA65-56678341490A}</UniqueIdentifier>
+      <UniqueIdentifier>{F75528B5-79A9-4470-89E4-AD9779C5D4A7}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Private\IOS\IOSSlateViewerMain.cpp">
       <Filter>Private\IOS</Filter>
     </ClCompile>
     <Filter Include="Private\Linux">
-      <UniqueIdentifier>{5F2CA9F7-8B34-4A1F-A8AC-95FF8C3EAF6C}</UniqueIdentifier>
+      <UniqueIdentifier>{68703FA6-A0A2-458B-84E1-6CEE5661324B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Private\Linux\SlateViewerMainLinux.cpp">
       <Filter>Private\Linux</Filter>
     </ClCompile>
     <Filter Include="Private\Mac">
-      <UniqueIdentifier>{899D1211-E04D-46BF-9DF2-E5AE1B6D3046}</UniqueIdentifier>
+      <UniqueIdentifier>{7FED8666-483A-49D0-B560-15477503529D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Private\Mac\SlateViewerMainMac.cpp">
       <Filter>Private\Mac</Filter>
     </ClCompile>
     <Filter Include="Private\Windows">
-      <UniqueIdentifier>{6707C78B-67CA-4B63-84B1-CD4ED05101ED}</UniqueIdentifier>
+      <UniqueIdentifier>{6D0F7935-1777-4153-B38E-4FD6FE11ED06}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Private\Windows\SlateViewerMainWindows.cpp">
       <Filter>Private\Windows</Filter>
     </ClCompile>
     <Filter Include="Public">
-      <UniqueIdentifier>{668B8A6E-8C85-4FC8-ADDA-ADDB5226777B}</UniqueIdentifier>
+      <UniqueIdentifier>{3C5DF630-B5A3-410D-8D79-294C91D0CBC0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\SlateViewer\Public\SlateViewer.h">
       <Filter>Public</Filter>

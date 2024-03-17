@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NetShootRewrite.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{543C1575-5ECC-4B36-91E5-2E06E035FD50}</UniqueIdentifier>
+      <UniqueIdentifier>{9041F2B6-407B-47FB-BDAA-635AE4336947}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NetShootRewrite.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{49C6215B-067A-40AF-BB87-72CB52AECE23}</UniqueIdentifier>
+      <UniqueIdentifier>{B1F6F9AB-27F5-4359-A43C-BFED54CF88E8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NetShootRewrite">
-      <UniqueIdentifier>{2D5C686A-52BD-48AF-9F8A-E3EEAF35F968}</UniqueIdentifier>
+      <UniqueIdentifier>{F4A4EB5C-0E45-410D-8551-880AC4B325FF}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\NetShootRewrite\NetshootCharacterBase.cpp">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NetShootRewrite\NetshootCharacterBase.h">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClInclude>
     <None Include="..\..\Source\NetShootRewrite\NetShootRewrite.Build.cs">
       <Filter>Source\NetShootRewrite</Filter>
     </None>
@@ -39,30 +45,6 @@
       <Filter>Source\NetShootRewrite</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewrite.h">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NetShootRewrite\NetShootRewriteCharacter.cpp">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewriteCharacter.h">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NetShootRewrite\NetShootRewriteGameMode.cpp">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewriteGameMode.h">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NetShootRewrite\NetShootRewriteHUD.cpp">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewriteHUD.h">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\NetShootRewrite\NetShootRewriteProjectile.cpp">
-      <Filter>Source\NetShootRewrite</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewriteProjectile.h">
       <Filter>Source\NetShootRewrite</Filter>
     </ClInclude>
   </ItemGroup>

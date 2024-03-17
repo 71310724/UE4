@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "NetShootRewrite",
-			"Path": "D:\\UE4\\NetShootRewrite\\Source\\NetShootRewrite.Target.cs",
+			"Path": "D:\\GitHub\\NetShootRewrite\\Source\\NetShootRewrite.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "NetShootRewriteEditor",
-			"Path": "D:\\UE4\\NetShootRewrite\\Source\\NetShootRewriteEditor.Target.cs",
+			"Path": "D:\\GitHub\\NetShootRewrite\\Source\\NetShootRewriteEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
