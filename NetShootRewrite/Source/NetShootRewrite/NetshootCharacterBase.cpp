@@ -4,6 +4,7 @@
 #include "NetshootCharacterBase.h"
 
 #include "Camera/CameraComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 ANetshootCharacterBase::ANetshootCharacterBase()
@@ -21,6 +22,7 @@ ANetshootCharacterBase::ANetshootCharacterBase()
 
 	GetMesh()->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	PlayerCamera->bUsePawnControlRotation=true;
 
 	
 	
@@ -38,19 +40,24 @@ void ANetshootCharacterBase::MoveRight(float AxisValue)
 
 void ANetshootCharacterBase::JumpAction()
 {
-	
+	Jump();
+	JumpKeyHoldTime=0;
 }
 
 void ANetshootCharacterBase::JumpStop()
 {
+	StopJumping();
 }
 
 void ANetshootCharacterBase::LowSpeedWalik()
 {
+	GetCharacterMovement()->MaxWalkSpeed=300;
 }
 
 void ANetshootCharacterBase::NormalSpeedWalik()
 {
+	GetCharacterMovement()->MaxWalkSpeed=500;
+	
 }
 
 
@@ -86,5 +93,10 @@ void ANetshootCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction(TEXT("LowSpeedWalik"), EInputEvent::IE_Pressed, this, &ANetshootCharacterBase::LowSpeedWalik);
 	PlayerInputComponent->BindAction(TEXT("LowSpeedWalik"), EInputEvent::IE_Released, this, &ANetshootCharacterBase::NormalSpeedWalik);
 
+
+
+	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ANetshootCharacterBase::AddControllerYawInput);
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ANetshootCharacterBase::AddControllerPitchInput);
+	
 }
 

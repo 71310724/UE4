@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-NetShootRewrite-0006.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\NetshootCharacterBase.cpp.obj"
+"D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\NetShootRewrite.cpp.obj"
+"D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\NetshootCharacterBase.gen.cpp.obj"
+"D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\NetShootRewrite.init.gen.cpp.obj"
+"C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
+/OUT:"D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\UE4Editor-NetShootRewrite-0006.lib"
