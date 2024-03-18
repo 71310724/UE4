@@ -20,8 +20,92 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ANetshootCharacterBase::execServerNormalSpeedWalk)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->ServerNormalSpeedWalk_Validate())
+		{
+			RPC_ValidateFailed(TEXT("ServerNormalSpeedWalk_Validate"));
+			return;
+		}
+		P_THIS->ServerNormalSpeedWalk_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ANetshootCharacterBase::execServerLowSpeedWalk)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->ServerLowSpeedWalk_Validate())
+		{
+			RPC_ValidateFailed(TEXT("ServerLowSpeedWalk_Validate"));
+			return;
+		}
+		P_THIS->ServerLowSpeedWalk_Implementation();
+		P_NATIVE_END;
+	}
+	static FName NAME_ANetshootCharacterBase_ServerLowSpeedWalk = FName(TEXT("ServerLowSpeedWalk"));
+	void ANetshootCharacterBase::ServerLowSpeedWalk()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ANetshootCharacterBase_ServerLowSpeedWalk),NULL);
+	}
+	static FName NAME_ANetshootCharacterBase_ServerNormalSpeedWalk = FName(TEXT("ServerNormalSpeedWalk"));
+	void ANetshootCharacterBase::ServerNormalSpeedWalk()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ANetshootCharacterBase_ServerNormalSpeedWalk),NULL);
+	}
 	void ANetshootCharacterBase::StaticRegisterNativesANetshootCharacterBase()
 	{
+		UClass* Class = ANetshootCharacterBase::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ServerLowSpeedWalk", &ANetshootCharacterBase::execServerLowSpeedWalk },
+			{ "ServerNormalSpeedWalk", &ANetshootCharacterBase::execServerNormalSpeedWalk },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "NetshootCharacterBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetshootCharacterBase, nullptr, "ServerLowSpeedWalk", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "NetshootCharacterBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetshootCharacterBase, nullptr, "ServerNormalSpeedWalk", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ANetshootCharacterBase_NoRegister()
 	{
@@ -30,6 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	struct Z_Construct_UClass_ANetshootCharacterBase_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -48,6 +133,10 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	UObject* (*const Z_Construct_UClass_ANetshootCharacterBase_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_NetShootRewrite,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ANetshootCharacterBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk, "ServerLowSpeedWalk" }, // 1193230758
+		{ &Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk, "ServerNormalSpeedWalk" }, // 972865120
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANetshootCharacterBase_Statics::Class_MetaDataParams[] = {
@@ -86,11 +175,11 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ANetshootCharacterBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ANetshootCharacterBase_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -105,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetshootCharacterBase, 2118319610);
+	IMPLEMENT_CLASS(ANetshootCharacterBase, 2942967110);
 	template<> NETSHOOTREWRITE_API UClass* StaticClass<ANetshootCharacterBase>()
 	{
 		return ANetshootCharacterBase::StaticClass();

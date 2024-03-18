@@ -44,5 +44,21 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+
+	UFUNCTION(Server,Reliable,WithValidation)
+	void ServerLowSpeedWalk();
+	bool ServerLowSpeedWalk_Validate();
+	void ServerLowSpeedWalk_Implementation();
+	
+	UFUNCTION(Server,Reliable,WithValidation)
+	void ServerNormalSpeedWalk();
+	bool ServerNormalSpeedWalk_Validate();
+	void  ServerNormalSpeedWalk_Implementation();
+	
+	
+	
+
+	
     
 };

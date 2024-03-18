@@ -52,11 +52,13 @@ void ANetshootCharacterBase::JumpStop()
 void ANetshootCharacterBase::LowSpeedWalik()
 {
 	GetCharacterMovement()->MaxWalkSpeed=300;
+	ServerLowSpeedWalk();
 }
 
 void ANetshootCharacterBase::NormalSpeedWalik()
 {
 	GetCharacterMovement()->MaxWalkSpeed=500;
+	ServerNormalSpeedWalk();
 	
 }
 
@@ -98,5 +100,26 @@ void ANetshootCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ANetshootCharacterBase::AddControllerYawInput);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ANetshootCharacterBase::AddControllerPitchInput);
 	
+}
+
+bool ANetshootCharacterBase::ServerLowSpeedWalk_Validate()
+{
+	return true;
+}
+
+void ANetshootCharacterBase::ServerLowSpeedWalk_Implementation()
+{
+	GetCharacterMovement()->MaxWalkSpeed=300;
+}
+
+
+bool ANetshootCharacterBase::ServerNormalSpeedWalk_Validate()
+{
+	return true;
+}
+
+void ANetshootCharacterBase::ServerNormalSpeedWalk_Implementation()
+{
+	GetCharacterMovement()->MaxWalkSpeed=500;
 }
 

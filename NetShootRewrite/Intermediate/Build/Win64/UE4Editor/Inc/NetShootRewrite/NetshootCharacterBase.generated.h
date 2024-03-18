@@ -14,8 +14,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NETSHOOTREWRITE_NetshootCharacterBase_generated_h
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_SPARSE_DATA
-#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS
-#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS \
+	virtual bool ServerNormalSpeedWalk_Validate(); \
+	virtual void ServerNormalSpeedWalk_Implementation(); \
+	virtual bool ServerLowSpeedWalk_Validate(); \
+	virtual void ServerLowSpeedWalk_Implementation(); \
+ \
+	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
+	DECLARE_FUNCTION(execServerLowSpeedWalk);
+
+
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
+	DECLARE_FUNCTION(execServerLowSpeedWalk);
+
+
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_EVENT_PARMS
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_CALLBACK_WRAPPERS
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANetshootCharacterBase(); \
@@ -63,13 +79,17 @@ public: \
 	FORCEINLINE static uint32 __PPO__FPArmMesh() { return STRUCT_OFFSET(ANetshootCharacterBase, FPArmMesh); }
 
 
-#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_9_PROLOG
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_9_PROLOG \
+	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_EVENT_PARMS
+
+
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_SPARSE_DATA \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS \
+	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_CALLBACK_WRAPPERS \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_INCLASS \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -82,6 +102,7 @@ public: \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_SPARSE_DATA \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_CALLBACK_WRAPPERS \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_INCLASS_NO_PURE_DECLS \
 	NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_ENHANCED_CONSTRUCTORS \
 private: \
