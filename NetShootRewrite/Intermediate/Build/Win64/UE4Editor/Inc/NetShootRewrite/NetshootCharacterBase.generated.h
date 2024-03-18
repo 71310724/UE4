@@ -15,17 +15,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_SPARSE_DATA
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS \
+	virtual void ClientEquitFPArmPrimary_Implementation(); \
 	virtual bool ServerNormalSpeedWalk_Validate(); \
 	virtual void ServerNormalSpeedWalk_Implementation(); \
 	virtual bool ServerLowSpeedWalk_Validate(); \
 	virtual void ServerLowSpeedWalk_Implementation(); \
  \
+	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
 	DECLARE_FUNCTION(execServerLowSpeedWalk);
 
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
 	DECLARE_FUNCTION(execServerLowSpeedWalk);
 
@@ -76,7 +79,9 @@ public: \
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PlayerCamera() { return STRUCT_OFFSET(ANetshootCharacterBase, PlayerCamera); } \
-	FORCEINLINE static uint32 __PPO__FPArmMesh() { return STRUCT_OFFSET(ANetshootCharacterBase, FPArmMesh); }
+	FORCEINLINE static uint32 __PPO__FPArmMesh() { return STRUCT_OFFSET(ANetshootCharacterBase, FPArmMesh); } \
+	FORCEINLINE static uint32 __PPO__ServerWeaponBase() { return STRUCT_OFFSET(ANetshootCharacterBase, ServerWeaponBase); } \
+	FORCEINLINE static uint32 __PPO__ClientWeaponeBase() { return STRUCT_OFFSET(ANetshootCharacterBase, ClientWeaponeBase); }
 
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_9_PROLOG \

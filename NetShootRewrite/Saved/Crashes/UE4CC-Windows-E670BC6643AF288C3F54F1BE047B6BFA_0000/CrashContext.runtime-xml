@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<ExecutionGuid>DA2ADD3449A3B4F782484985CCD7D330</ExecutionGuid>
+<CrashGUID>UE4CC-Windows-E670BC6643AF288C3F54F1BE047B6BFA_0000</CrashGUID>
+<IsEnsure>true</IsEnsure>
+<IsAssert>false</IsAssert>
+<CrashType>Ensure</CrashType>
+<ErrorMessage>Ensure condition failed: InParent != this [File:C:/Program Files (x86)/UE4.27/UnrealEngine-4.27/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1752]
+Cannot attach a component to itself.
+Stack: 
+0x00007ffeea9ccfe9 UE4Editor-Engine.dll!DispatchCheckVerify&lt;bool,&lt;lambda_a91c019e94cff95fb8de44ae35b77ee5&gt; &gt;() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Core\Public\Misc\AssertionMacros.h:164]
+0x00007ffee94490f2 UE4Editor-Engine.dll!USceneComponent::SetupAttachment() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp:1752]
+0x00007ffef65642eb UE4Editor-NetShootRewrite.dll!AWeaponServerBase::AWeaponServerBase() [D:\GitHub\NetShootRewrite\Source\NetShootRewrite\WeaponServerBase.cpp:17]
+0x00007ffeefba36a3 UE4Editor-CoreUObject.dll!UClass::CreateDefaultObject() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:3791]
+0x00007ffeefec222c UE4Editor-CoreUObject.dll!UObjectLoadAllCompiledInDefaultProperties() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:911]
+0x00007ffeefe9ef41 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:1003]
+0x00007ffeefd69dc5 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance&lt;void __cdecl(FName,bool),FDefaultDelegateUserPolicy&gt;::ExecuteIfSafe() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:731]
+0x00007ffeeef780f9 UE4Editor-Core.dll!TMulticastDelegate&lt;void __cdecl(FName,bool),FDefaultDelegateUserPolicy&gt;::Broadcast() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:955]
+0x00007ffeeef995df UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:519]
+0x00007fff36515eae UE4Editor-Projects.dll!FModuleDescriptor::LoadModulesForPhase() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Projects\Private\ModuleDescriptor.cpp:643]
+0x00007fff365161a9 UE4Editor-Projects.dll!FProjectManager::LoadModulesForProject() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Projects\Private\ProjectManager.cpp:62]
+0x00007ff645a053d2 UE4Editor.exe!FEngineLoop::LoadStartupModules() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:3880]
+0x00007ff645a08a78 UE4Editor.exe!FEngineLoop::PreInitPostStartupScreen() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:3263]
+0x00007ff645a00b8d UE4Editor.exe!GuardedMain() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\Launch.cpp:132]
+0x00007ff645a00f1a UE4Editor.exe!GuardedMainWrapper() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+0x00007ff645a03ec1 UE4Editor.exe!LaunchWindowsStartup() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:273]
+0x00007ff645a152d4 UE4Editor.exe!WinMain() [C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:320]
+0x00007ff645a17c56 UE4Editor.exe!__scrt_common_main_seh() [D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+0x00007fff51b27344 KERNEL32.DLL!UnknownFunction []
+0x00007fff530a26b1 ntdll.dll!UnknownFunction []
+</ErrorMessage>
+<CrashReporterMessage></CrashReporterMessage>
+<ProcessId>10656</ProcessId>
+<SecondsSinceStart>0</SecondsSinceStart>
+<IsInternalBuild>false</IsInternalBuild>
+<IsPerforceBuild>false</IsPerforceBuild>
+<IsSourceDistribution>true</IsSourceDistribution>
+<GameName>UE4-NetShootRewrite</GameName>
+<ExecutableName>UE4Editor</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<Symbols>**UE4*Release-4.27-CL-0-Win64-Development</Symbols>
+<PlatformName>Windows</PlatformName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Game</EngineMode>
+<EngineModeEx>Unset</EngineModeEx>
+<DeploymentName></DeploymentName>
+<EngineVersion>4.27.2-0+++UE4+Release-4.27</EngineVersion>
+<CommandLine> D:/GitHub/NetShootRewrite/NetShootRewrite.uproject</CommandLine>
+<LanguageLCID>0</LanguageLCID>
+<AppDefaultLocale>zh-CN</AppDefaultLocale>
+<BuildVersion>++UE4+Release-4.27-CL-0</BuildVersion>
+<IsUE4Release>false</IsUE4Release>
+<IsRequestingExit>false</IsRequestingExit>
+<UserName></UserName>
+<BaseDir>C:/Program Files (x86)/UE4.27/UnrealEngine-4.27/Engine/Binaries/Win64/</BaseDir>
+<RootDir>C:/Program Files (x86)/UE4.27/UnrealEngine-4.27/</RootDir>
+<MachineId>F61CEC974BBE29C05EC7B2BA0361775E</MachineId>
+<LoginId>f61cec974bbe29c05ec7b2ba0361775e</LoginId>
+<EpicAccountId>4908a8cb310042098503c39bd6fc1007</EpicAccountId>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<CrashDumpMode>0</CrashDumpMode>
+<GameStateName></GameStateName>
+<Misc.NumberOfCores>6</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>12</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+<Misc.CPUBrand>Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz</Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>NVIDIA GeForce GTX 1660 Ti</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 10 (Release 2009)</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<MemoryStats.TotalPhysical>17105735680</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>16</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>1941356544</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>10194497536</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1136566272</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1136570368</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>1194188800</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>1194188800</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+<NumMinidumpFramesToIgnore>0</NumMinidumpFramesToIgnore>
+<CallStack></CallStack>
+<PCallStack>
+UE4Editor-Engine           0x00007ffee8b20000 + 1eacfe9         
+UE4Editor-Engine           0x00007ffee8b20000 + 9290f2          
+UE4Editor-NetShootRewrite  0x00007ffef6560000 + 42eb            
+UE4Editor-CoreUObject      0x00007ffeefa60000 + 1436a3          
+UE4Editor-CoreUObject      0x00007ffeefa60000 + 46222c          
+UE4Editor-CoreUObject      0x00007ffeefa60000 + 43ef41          
+UE4Editor-CoreUObject      0x00007ffeefa60000 + 309dc5          
+UE4Editor-Core             0x00007ffeeec00000 + 3780f9          
+UE4Editor-Core             0x00007ffeeec00000 + 3995df          
+UE4Editor-Projects         0x00007fff364f0000 + 25eae           
+UE4Editor-Projects         0x00007fff364f0000 + 261a9           
+UE4Editor                  0x00007ff6459e0000 + 253d2           
+UE4Editor                  0x00007ff6459e0000 + 28a78           
+UE4Editor                  0x00007ff6459e0000 + 20b8d           
+UE4Editor                  0x00007ff6459e0000 + 20f1a           
+UE4Editor                  0x00007ff6459e0000 + 23ec1           
+UE4Editor                  0x00007ff6459e0000 + 352d4           
+UE4Editor                  0x00007ff6459e0000 + 37c56           
+KERNEL32                   0x00007fff51b10000 + 17344           
+ntdll                      0x00007fff53050000 + 526b1           
+</PCallStack>
+<PCallStackHash>04D852878CDB7C995DD79139B6DB5E72C48C801A</PCallStackHash>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<IsRunningOnBattery>false</IsRunningOnBattery>
+<PlatformCallbackResult>0</PlatformCallbackResult>
+</PlatformProperties>
+<EngineData>
+<RHI.IsGPUOverclocked>false</RHI.IsGPUOverclocked>
+<RHI.RHIName>D3D11</RHI.RHIName>
+<RHI.AdapterName>NVIDIA GeForce GTX 1660 Ti</RHI.AdapterName>
+<RHI.UserDriverVersion>536.23</RHI.UserDriverVersion>
+<RHI.InternalDriverVersion>31.0.15.3623</RHI.InternalDriverVersion>
+<RHI.DriverDate>6-8-2023</RHI.DriverDate>
+<RHI.FeatureLevel>SM5</RHI.FeatureLevel>
+<DeviceProfile.Name>Windows</DeviceProfile.Name>
+</EngineData>
+<GameData>
+</GameData>
+</FGenericCrashContext>

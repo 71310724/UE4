@@ -3,8 +3,10 @@
 
 #include "NetshootCharacterBase.h"
 
+#include "WeaponClientBase.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "WeaponServerBase.h"
 
 // Sets default values
 ANetshootCharacterBase::ANetshootCharacterBase()
@@ -121,5 +123,41 @@ bool ANetshootCharacterBase::ServerNormalSpeedWalk_Validate()
 void ANetshootCharacterBase::ServerNormalSpeedWalk_Implementation()
 {
 	GetCharacterMovement()->MaxWalkSpeed=500;
+}
+
+void ANetshootCharacterBase::ClientEquitFPArmPrimary_Implementation()
+{
+	if (ServerWeaponBase)
+	{
+
+		FActorSpawnParameters SpawnParameters;
+		SpawnParameters.Owner=this;
+		SpawnParameters.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		ClientWeaponeBase=GetWorld()->SpawnActor<AWeaponClientBase>(ServerWeaponBase->WeaponClient,GetTransform(),SpawnParameters);
+		ClientWeaponeBase->AttachToComponent(FPArmMesh,FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_Client"));
+	}
+}
+
+void ANetshootCharacterBase::EquipPrimary(AWeaponServerBase* ServerWeapon)
+{
+	
+	if(ServerWeaponBase)
+	{
+		
+	}
+	else
+	{
+		ServerWeaponBase=ServerWeapon;
+
+		ServerWeaponBase->SetOwner(this);
+		ServerWeaponBase->AttachToComponent(GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_first"));
+
+		if (HasAuthority())
+		{
+			ClientEquitFPArmPrimary();
+		}
+		
+
+	}
 }
 

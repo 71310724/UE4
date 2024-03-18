@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NetShootRewrite.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9041F2B6-407B-47FB-BDAA-635AE4336947}</UniqueIdentifier>
+      <UniqueIdentifier>{7BC5A44E-827A-4E49-83DC-13B76BAB4060}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NetShootRewrite.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B1F6F9AB-27F5-4359-A43C-BFED54CF88E8}</UniqueIdentifier>
+      <UniqueIdentifier>{ED9AF521-3AA2-44B5-9D9E-AEFACAE59C58}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NetShootRewrite">
-      <UniqueIdentifier>{F4A4EB5C-0E45-410D-8551-880AC4B325FF}</UniqueIdentifier>
+      <UniqueIdentifier>{71D2296A-CF84-4A5E-9D6E-B79511187D6C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NetShootRewrite\NetshootCharacterBase.cpp">
       <Filter>Source\NetShootRewrite</Filter>
@@ -45,6 +45,18 @@
       <Filter>Source\NetShootRewrite</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NetShootRewrite\NetShootRewrite.h">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NetShootRewrite\WeaponClientBase.cpp">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NetShootRewrite\WeaponClientBase.h">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NetShootRewrite\WeaponServerBase.cpp">
+      <Filter>Source\NetShootRewrite</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NetShootRewrite\WeaponServerBase.h">
       <Filter>Source\NetShootRewrite</Filter>
     </ClInclude>
   </ItemGroup>

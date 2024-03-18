@@ -1,0 +1,3 @@
+D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Development\NetShootRewrite\Definitions.NetShootRewrite.h
+D:\GitHub\NetShootRewrite\Source\NetShootRewrite\ServerClientBase.h
+D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Inc\NetShootRewrite\ServerClientBase.generated.h

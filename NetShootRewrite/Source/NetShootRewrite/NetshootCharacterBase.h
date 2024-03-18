@@ -56,9 +56,19 @@ public:
 	bool ServerNormalSpeedWalk_Validate();
 	void  ServerNormalSpeedWalk_Implementation();
 	
+	UFUNCTION(Client,Reliable)
+	void ClientEquitFPArmPrimary();
+	void  ClientEquitFPArmPrimary_Implementation();
 	
 	
+	void EquipPrimary(class AWeaponServerBase* ServerWeapon);
 
-	
+
+private:
+    UPROPERTY(meta=(AllowPrivateAccess = "true"))
+	class AWeaponServerBase* ServerWeaponBase;
+
+	UPROPERTY(meta=(AllowPrivateAccess = "true"))
+	class AWeaponClientBase* ClientWeaponeBase;
     
 };
