@@ -22,7 +22,8 @@ AWeaponServerBase::AWeaponServerBase()
 	ServerWeaponMesh->SetOwnerNoSee(true);
 
 	SphereCollision->OnComponentBeginOverlap.AddDynamic(this,&AWeaponServerBase::OnComponetBeginOverlap);
-	
+
+	SetReplicates(true);
 }
 
 // Called when the game starts or when spawned

@@ -69,7 +69,7 @@ void ANetshootCharacterBase::NormalSpeedWalik()
 void ANetshootCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	StartWitKindofWeapon();
 }
 
 // Called every frame
@@ -158,6 +158,40 @@ void ANetshootCharacterBase::EquipPrimary(AWeaponServerBase* ServerWeapon)
 		}
 		
 
+	}
+}
+
+void ANetshootCharacterBase::StartWitKindofWeapon()
+{
+	if (HasAuthority())
+	{
+		PurchaseWeapon(EWeaponType::Ak47);
+	}
+}
+
+void ANetshootCharacterBase::PurchaseWeapon(EWeaponType Weapontype)
+{
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.Owner=this;
+	SpawnParameters.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+	
+	switch (Weapontype)
+	{
+	case  EWeaponType::Ak47:
+		{
+		UClass* Temp=	StaticLoadClass(AWeaponServerBase::StaticClass(),nullptr,TEXT("Blueprint'/Game/NetShoot/Blueprint/Weapon/BP_ServerWeaponBase.BP_ServerWeaponBase_C'"));
+        AWeaponServerBase* ServerWeaponTemp=    GetWorld()->SpawnActor<AWeaponServerBase>(Temp,GetTransform(),SpawnParameters);
+			
+			EquipPrimary(ServerWeaponTemp);
+			
+		}
+		break;
+	case EWeaponType::DesertEagle:
+		{
+			
+		}
+		break;
 	}
 }
 

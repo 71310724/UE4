@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "WeaponServerBase.h"
+
 #include "NetshootCharacterBase.generated.h"
 
 UCLASS()
@@ -56,14 +58,16 @@ public:
 	bool ServerNormalSpeedWalk_Validate();
 	void  ServerNormalSpeedWalk_Implementation();
 	
-	UFUNCTION(Client,Reliable)
+	UFUNCTION(NetMulticast,Reliable)
 	void ClientEquitFPArmPrimary();
 	void  ClientEquitFPArmPrimary_Implementation();
 	
 	
 	void EquipPrimary(class AWeaponServerBase* ServerWeapon);
 
+	void StartWitKindofWeapon();
 
+     void PurchaseWeapon(EWeaponType  Weapontype);
 private:
     UPROPERTY(meta=(AllowPrivateAccess = "true"))
 	class AWeaponServerBase* ServerWeaponBase;
