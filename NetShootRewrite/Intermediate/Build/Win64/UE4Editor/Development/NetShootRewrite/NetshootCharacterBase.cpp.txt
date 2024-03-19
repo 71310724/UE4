@@ -29,3 +29,7 @@ C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameSession.h
+C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameSession.generated.h
+D:\GitHub\NetShootRewrite\Source\NetShootRewrite\NetShootPlayerController.h
+D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Inc\NetShootRewrite\NetShootPlayerController.generated.h

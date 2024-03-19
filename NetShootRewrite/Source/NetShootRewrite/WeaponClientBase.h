@@ -19,13 +19,33 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION( BlueprintImplementableEvent,Category=FPSAnimtion)
+		void PlayAnimation();
 
+	UFUNCTION()
+	void DisplayWeaponEffect();
 protected:
 	UPROPERTY(EditAnywhere)
 	class USkeletalMeshComponent*  WeaponClientAcotr;
+
+
+public:
+	UPROPERTY(EditAnywhere)
+	class UAnimMontage* ClientArmFireAnimMontage;
+
+	UPROPERTY(EditAnywhere)
+	class USoundBase*  Sound2D;
+
+	UPROPERTY(EditAnywhere)
+	class UParticleSystem*  FireClientPartical;
+
+	UPROPERTY(EditAnywhere)
+    TSubclassOf<class UCameraShakeBase>	 CameraShakeClass ;
+
 };

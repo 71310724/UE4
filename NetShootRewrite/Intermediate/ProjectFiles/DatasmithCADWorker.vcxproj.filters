@@ -4,7 +4,7 @@
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithCADWorker\DatasmithCADWorker.Target.cs" />
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithCADWorker\DatasmithCADWorker.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{49993A70-B8C1-41DE-981B-F625A76FF427}</UniqueIdentifier>
+      <UniqueIdentifier>{DE11EBBC-4A67-4D3C-BB39-C2539601BCFC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithCADWorker\Private\DatasmithCADWorker.cpp">
       <Filter>Private</Filter>
@@ -19,10 +19,10 @@
       <Filter>Private</Filter>
     </ClInclude>
     <Filter Include="Resources">
-      <UniqueIdentifier>{40A8B580-1227-49CA-BB99-42922B945B0B}</UniqueIdentifier>
+      <UniqueIdentifier>{B2B5F6D7-2C91-4A49-A6C7-0ECBF98C4E77}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\Windows">
-      <UniqueIdentifier>{A0C01F6C-E624-4BE2-A64A-E3E77895E68A}</UniqueIdentifier>
+      <UniqueIdentifier>{95029130-7384-43C1-B467-68D5E0F96769}</UniqueIdentifier>
     </Filter>
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\Enterprise\Datasmith\DatasmithCADWorker\Resources\Windows\BlankProgram.ico">
       <Filter>Resources\Windows</Filter>

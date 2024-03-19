@@ -3,14 +3,14 @@
   <ItemGroup>
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\UnrealMultiUserServer\UnrealMultiUserServer.Target.cs" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A660F18B-3D9B-43E6-A0BF-7C1E42D5104C}</UniqueIdentifier>
+      <UniqueIdentifier>{B244A2A3-6978-449C-812F-7B84D6C14A4E}</UniqueIdentifier>
     </Filter>
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Programs\UnrealMultiUserServer\Config\DefaultEngine.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\UnrealMultiUserServer\UnrealMultiUserServer.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{48AA0497-4369-42E9-87AB-D5167F371C17}</UniqueIdentifier>
+      <UniqueIdentifier>{D797DBD8-47A1-4E63-81EB-4B9620ACA921}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\UnrealMultiUserServer\Private\UnrealMultiUserServerMain.cpp">
       <Filter>Private</Filter>

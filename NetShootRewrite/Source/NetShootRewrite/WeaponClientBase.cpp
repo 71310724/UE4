@@ -3,6 +3,9 @@
 
 #include "WeaponClientBase.h"
 
+#include "Kismet/GameplayStatics.h"
+#define   LOG(X)    UE_LOG(LogTemp,Warning,TEXT("X"))
+
 // Sets default values
 AWeaponClientBase::AWeaponClientBase()
 {
@@ -27,5 +30,15 @@ void AWeaponClientBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AWeaponClientBase::DisplayWeaponEffect()
+{
+	UGameplayStatics::PlaySound2D(GetWorld(),Sound2D);
+	// LOG("播放声音");
+	UE_LOG(LogTemp,Log,TEXT("播放射击声音"));
+
+	UGameplayStatics::SpawnEmitterAttached(FireClientPartical,WeaponClientAcotr,TEXT("Muzzle"));
+	
 }
 

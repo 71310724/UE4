@@ -19,8 +19,12 @@ private:
 
 	UPROPERTY(Category=Character, VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
 	class USkeletalMeshComponent*  FPArmMesh;
+  UPROPERTY()
+	class  UAnimInstance*  ClientArmAnimWEapon;
 
-
+   UPROPERTY( BlueprintReadOnly, meta=(AllowPrivateAccess = "true"))
+	class ANetShootPlayerController*  NetPlayerController;
+   
 protected:
 	// Sets default values for this character's properties
 	ANetshootCharacterBase();
@@ -29,6 +33,9 @@ protected:
 	 void MoveForward(float AxisValue);
 	void  MoveRight(float AxisValue);
 
+
+	 void InputFirePressed();
+	void InputFireRelease();
 	
 	void  JumpAction();
 	
@@ -39,6 +46,17 @@ protected:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	
+	void FireWeaponPrimary();
+	
+    UFUNCTION()
+	void StopFirePrimary();
+     UFUNCTION(Client,Reliable)
+	void ClientFire();
+	
+     
+	class AWeaponClientBase*  GetCurrentWeaponClient();
 
 public:	
 	// Called every frame
@@ -74,5 +92,8 @@ private:
 
 	UPROPERTY(meta=(AllowPrivateAccess = "true"))
 	class AWeaponClientBase* ClientWeaponeBase;
+
+	UPROPERTY(EditAnywhere,meta=(AllowPrivateAccess = "true"))
+	EWeaponType  ActiveWeapon;
     
 };

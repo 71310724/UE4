@@ -20,17 +20,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void ServerNormalSpeedWalk_Implementation(); \
 	virtual bool ServerLowSpeedWalk_Validate(); \
 	virtual void ServerLowSpeedWalk_Implementation(); \
+	virtual void ClientFire_Implementation(); \
  \
 	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
-	DECLARE_FUNCTION(execServerLowSpeedWalk);
+	DECLARE_FUNCTION(execServerLowSpeedWalk); \
+	DECLARE_FUNCTION(execClientFire); \
+	DECLARE_FUNCTION(execStopFirePrimary);
 
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void ClientFire_Implementation(); \
  \
 	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
-	DECLARE_FUNCTION(execServerLowSpeedWalk);
+	DECLARE_FUNCTION(execServerLowSpeedWalk); \
+	DECLARE_FUNCTION(execClientFire); \
+	DECLARE_FUNCTION(execStopFirePrimary);
 
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_EVENT_PARMS
@@ -80,8 +86,11 @@ public: \
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PlayerCamera() { return STRUCT_OFFSET(ANetshootCharacterBase, PlayerCamera); } \
 	FORCEINLINE static uint32 __PPO__FPArmMesh() { return STRUCT_OFFSET(ANetshootCharacterBase, FPArmMesh); } \
+	FORCEINLINE static uint32 __PPO__ClientArmAnimWEapon() { return STRUCT_OFFSET(ANetshootCharacterBase, ClientArmAnimWEapon); } \
+	FORCEINLINE static uint32 __PPO__NetPlayerController() { return STRUCT_OFFSET(ANetshootCharacterBase, NetPlayerController); } \
 	FORCEINLINE static uint32 __PPO__ServerWeaponBase() { return STRUCT_OFFSET(ANetshootCharacterBase, ServerWeaponBase); } \
-	FORCEINLINE static uint32 __PPO__ClientWeaponeBase() { return STRUCT_OFFSET(ANetshootCharacterBase, ClientWeaponeBase); }
+	FORCEINLINE static uint32 __PPO__ClientWeaponeBase() { return STRUCT_OFFSET(ANetshootCharacterBase, ClientWeaponeBase); } \
+	FORCEINLINE static uint32 __PPO__ActiveWeapon() { return STRUCT_OFFSET(ANetshootCharacterBase, ActiveWeapon); }
 
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_11_PROLOG \

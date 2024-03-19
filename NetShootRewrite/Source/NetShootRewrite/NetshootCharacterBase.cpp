@@ -7,6 +7,8 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "WeaponServerBase.h"
+#include "GameFramework/GameSession.h"
+#include "NetShootPlayerController.h"
 
 // Sets default values
 ANetshootCharacterBase::ANetshootCharacterBase()
@@ -40,6 +42,24 @@ void ANetshootCharacterBase::MoveRight(float AxisValue)
 	AddMovementInput(GetActorRightVector(),AxisValue,false);
 }
 
+void ANetshootCharacterBase::InputFirePressed()
+{
+	switch (ActiveWeapon)
+	{
+	case EWeaponType::Ak47: FireWeaponPrimary();
+		break;
+	}
+}
+
+void ANetshootCharacterBase::InputFireRelease()
+{
+	switch (ActiveWeapon)
+	{
+	case EWeaponType::Ak47: StopFirePrimary();
+		break;
+	}
+}
+
 void ANetshootCharacterBase::JumpAction()
 {
 	Jump();
@@ -70,6 +90,70 @@ void ANetshootCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
 	StartWitKindofWeapon();
+
+	ClientArmAnimWEapon=FPArmMesh->GetAnimInstance();
+
+	NetPlayerController=Cast<ANetShootPlayerController>(GetController());
+	
+}
+
+
+
+
+// ak开火
+void ANetshootCharacterBase::FireWeaponPrimary()
+{
+	ClientFire();
+}
+// ak停止开火
+void ANetshootCharacterBase::StopFirePrimary()
+{
+	
+}
+
+void ANetshootCharacterBase::ClientFire_Implementation()
+{
+	
+    
+	// /枪体播放动画
+	AWeaponClientBase* CurrentClientWeapon=GetCurrentWeaponClient();
+	if (CurrentClientWeapon)
+	{
+		CurrentClientWeapon->PlayAnimation();
+
+		
+		// 手臂播放动画
+		UAnimMontage*  TempMontage=ClientWeaponeBase->ClientArmFireAnimMontage;
+		if (TempMontage)
+		{
+			ClientArmAnimWEapon->Montage_Play(TempMontage);
+		}
+
+
+		//声音射击播放
+		CurrentClientWeapon->DisplayWeaponEffect();
+
+		// 播放屏幕抖动cameraShake
+		NetPlayerController->PlayCameraShake(CurrentClientWeapon->CameraShakeClass);
+	}
+
+
+	
+}
+
+
+AWeaponClientBase* ANetshootCharacterBase::GetCurrentWeaponClient()
+{
+	switch (ActiveWeapon)
+	{
+	case EWeaponType::Ak47:
+		{
+			return   ClientWeaponeBase;
+			
+		}
+		
+	}
+	return  nullptr;
 }
 
 // Called every frame
@@ -93,6 +177,11 @@ void ANetshootCharacterBase::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ANetshootCharacterBase::JumpAction);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Released, this, &ANetshootCharacterBase::JumpStop);
+	
+	PlayerInputComponent->BindAction(TEXT("Fire"), EInputEvent::IE_Pressed, this, &ANetshootCharacterBase::InputFirePressed);
+	PlayerInputComponent->BindAction(TEXT("Fire"), EInputEvent::IE_Released, this, &ANetshootCharacterBase::InputFireRelease);
+
+	
 
 	PlayerInputComponent->BindAction(TEXT("LowSpeedWalik"), EInputEvent::IE_Pressed, this, &ANetshootCharacterBase::LowSpeedWalik);
 	PlayerInputComponent->BindAction(TEXT("LowSpeedWalik"), EInputEvent::IE_Released, this, &ANetshootCharacterBase::NormalSpeedWalik);
@@ -129,12 +218,16 @@ void ANetshootCharacterBase::ClientEquitFPArmPrimary_Implementation()
 {
 	if (ServerWeaponBase)
 	{
-
-		FActorSpawnParameters SpawnParameters;
-		SpawnParameters.Owner=this;
-		SpawnParameters.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-		ClientWeaponeBase=GetWorld()->SpawnActor<AWeaponClientBase>(ServerWeaponBase->WeaponClient,GetTransform(),SpawnParameters);
-		ClientWeaponeBase->AttachToComponent(FPArmMesh,FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_Client"));
+		if (!ClientWeaponeBase)
+		{
+			// UE_LOG(LogTemp,Warning,TEXT("警告"));
+			FActorSpawnParameters SpawnParameters;
+			SpawnParameters.Owner=this;
+			SpawnParameters.SpawnCollisionHandlingOverride=ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+			ClientWeaponeBase=GetWorld()->SpawnActor<AWeaponClientBase>(ServerWeaponBase->WeaponClient,GetTransform(),SpawnParameters);
+			ClientWeaponeBase->AttachToComponent(FPArmMesh,FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_Client"));
+		}
+       
 	}
 }
 
@@ -152,9 +245,10 @@ void ANetshootCharacterBase::EquipPrimary(AWeaponServerBase* ServerWeapon)
 		ServerWeaponBase->SetOwner(this);
 		ServerWeaponBase->AttachToComponent(GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_first"));
 
+		ClientEquitFPArmPrimary();
 		if (HasAuthority())
 		{
-			ClientEquitFPArmPrimary();
+			
 		}
 		
 

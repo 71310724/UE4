@@ -4,13 +4,13 @@
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\HeadlessChaosPerf\HeadlessChaosPerf.Target.cs" />
     <None Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\HeadlessChaosPerf\HeadlessChaosPerf.Build.cs" />
     <Filter Include="Private">
-      <UniqueIdentifier>{8308DE7C-BF27-46CD-B0DF-73074F037F64}</UniqueIdentifier>
+      <UniqueIdentifier>{8721FFCE-40B2-4EFC-9796-4426D7876FEC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\HeadlessChaosPerf\Private\HeadlessChaosPerfApp.cpp">
       <Filter>Private</Filter>
     </ClCompile>
     <Filter Include="Private\ChaosPerf">
-      <UniqueIdentifier>{C20F3A00-6960-45BA-AD6E-76A199BF85F9}</UniqueIdentifier>
+      <UniqueIdentifier>{DE61EE0B-F116-4262-B0EC-AD165303BA2D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\ChaosPerf.h">
       <Filter>Private\ChaosPerf</Filter>
@@ -25,7 +25,7 @@
       <Filter>Private\ChaosPerf</Filter>
     </ClInclude>
     <Filter Include="Private\ChaosPerf\PerfTests">
-      <UniqueIdentifier>{62DE7900-2D7D-40D9-B4B1-87E5E8106C42}</UniqueIdentifier>
+      <UniqueIdentifier>{74C8C5A2-9210-46B5-9CA5-3F668675F683}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Programs\HeadlessChaosPerf\Private\ChaosPerf\PerfTests\ChaosPerfProfilerTests.cpp">
       <Filter>Private\ChaosPerf\PerfTests</Filter>
