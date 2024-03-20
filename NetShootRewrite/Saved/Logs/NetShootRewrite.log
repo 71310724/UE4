@@ -5093,3 +5093,406 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2024.03.20-07.38.28:293][744]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
 [2024.03.20-07.38.28:703][744]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0098 seconds. Added 3825 classes and 928 folders.
 [2024.03.20-07.38.28:708][744]Display: HotReload took  0.5s.
+[2024.03.20-07.40.42:687][145]LogHotReload: New module detected: UE4Editor-NetShootRewrite-0024.dll
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936e2f0 [can pipeline])
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 1 (Re-using existing connection! (#82) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.81.45.253) port 443 (#82))
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 7 (Closing connection 82)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: 00000275395E3200: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.41.00:725][200]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-07.45.00:680][918]LogHttp: Warning: 00000275245EF900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.45.00:680][918]LogHttp: Warning: 00000275245EF900: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936dbd0 [can pipeline])
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 1 (Re-using existing connection! (#83) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (34.203.125.140) port 443 (#83))
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 7 (Closing connection 83)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: 00000275245EF900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.45.00:681][918]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936d990 [can pipeline])
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 1 (Re-using existing connection! (#84) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.84.229.176) port 443 (#84))
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 7 (Closing connection 84)
+[2024.03.20-07.48.00:672][457]LogHttp: Warning: 000002751F267900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.48.01:005][458]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936d390 [can pipeline])
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 1 (Re-using existing connection! (#85) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (34.233.117.160) port 443 (#85))
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 7 (Closing connection 85)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: 000002751F24F900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.51.00:634][996]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936cf10 [can pipeline])
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 1 (Re-using existing connection! (#86) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.92.166.11) port 443 (#86))
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 7 (Closing connection 86)
+[2024.03.20-07.55.00:619][715]LogHttp: Warning: 000002751F24F900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.55.00:954][716]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-07.56.16:734][942]LogHotReload: New module detected: UE4Editor-NetShootRewrite-0025.dll
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: request failed, libcurl error: 0 (No error)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936cbe0 [can pipeline])
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 1 (Re-using existing connection! (#87) with host datarouter.ol.epicgames.com)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (50.16.173.120) port 443 (#87))
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 7 (Closing connection 87)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: 000002751F24F900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-07.59.00:645][434]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: request failed, libcurl error: 0 (No error)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936c550 [can pipeline])
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 1 (Re-using existing connection! (#88) with host datarouter.ol.epicgames.com)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (18.207.44.227) port 443 (#88))
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 7 (Closing connection 88)
+[2024.03.20-08.03.00:690][153]LogHttp: Warning: 000002751F24F900: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-08.03.01:023][154]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-08.07.53:374][ 59]LogHotReload: New module detected: UE4Editor-NetShootRewrite-0026.dll
+[2024.03.20-08.07.54:735][ 64]LogHotReload: Starting Hot-Reload from IDE
+[2024.03.20-08.07.54:912][ 64]LogClass: Could not find existing class WeaponServerBase in package /Script/NetShootRewrite for HotReload, assuming new class
+[2024.03.20-08.07.54:933][ 64]LogClass: Function MuliticastShootingEffect is new.
+[2024.03.20-08.07.54:933][ 64]LogClass: Function OnComponetBeginOverlap is new.
+[2024.03.20-08.07.54:941][ 64]LogClass: EWeaponType HotReload.
+[2024.03.20-08.07.54:942][ 64]LogActor: Warning: SetReplicates called on non-initialized actor Default__WeaponServerBase. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:954][ 64]LogHotReload: Re-instancing WeaponServerBase after hot-reload.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::bReplicateMovement (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::bHidden (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::bTearOff (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::bCanBeDamaged (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::RemoteRole (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::ReplicatedMovement (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::AttachmentReplication (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::Owner (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::Role (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:955][ 64]LogClass: Warning: Property WeaponServerBase::Instigator (SourceClass: Actor) was not registered in GetLifetimeReplicatedProps. This property will not be replicated. Use DISABLE_REPLICATED_PROPERTY if not replicating was intentional.
+[2024.03.20-08.07.54:956][ 64]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_ServerWeaponBase_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:957][ 64]LogActor: Warning: SetReplicates called on non-initialized actor Default__BP_ServerWeaponBase_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:972][ 64]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:993][ 64]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:994][ 64]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.54:995][ 64]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_13. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.55:019][ 64]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_14. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.07.55:050][ 64]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NetShootRewrite' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2024.03.20-08.07.55:058][ 64]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2024.03.20-08.07.55:934][ 64]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0102 seconds. Added 3825 classes and 928 folders.
+[2024.03.20-08.07.55:941][ 64]Display: HotReload took  1.2s.
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: request failed, libcurl error: 0 (No error)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936c5e0 [can pipeline])
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 1 (Re-using existing connection! (#89) with host datarouter.ol.epicgames.com)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (44.217.96.101) port 443 (#89))
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 7 (Closing connection 89)
+[2024.03.20-08.08.00:687][ 79]LogHttp: Warning: 0000027507EB2B00: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-08.08.01:017][ 80]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.20-08.08.40:660][397]LogUObjectHash: Compacting FUObjectHashTables data took   5.06ms
+[2024.03.20-08.08.41:831][397]LogSlate: Window '保存内容' being destroyed
+[2024.03.20-08.08.42:038][397]LogUObjectHash: Compacting FUObjectHashTables data took   4.41ms
+[2024.03.20-08.08.42:084][397]LogSavePackage: Moving 'D:/GitHub/NetShootRewrite/Saved/FirstPersonExampleMap7622741F429E0897752FC3BA210A3E28.tmp' to 'D:/GitHub/NetShootRewrite/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2024.03.20-08.08.42:095][397]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 0.166
+[2024.03.20-08.08.42:199][397]AssetCheck: New page: 资产保存：FirstPersonExampleMap
+[2024.03.20-08.08.42:200][397]LogContentValidation: Display: 正在验证World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2024.03.20-08.09.00:934][513]LogAnalytics: Display: [UEEditor.UnrealEngine.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.27.2-0+++UE4+Release-4.27
+[2024.03.20-08.09.01:676][513]LogEditorSessionSummary: EditorSessionSummary sent report. Type=AbnormalShutdown, SessionId={66F38F43-4145-8622-9AC1-BF857D836D5E}
+[2024.03.20-08.09.01:684][514]LogHotReload: New module detected: UE4Editor-NetShootRewrite-0027.dll
+[2024.03.20-08.09.02:710][518]LogHotReload: Starting Hot-Reload from IDE
+[2024.03.20-08.09.02:742][518]LogClass: EWeaponType HotReload.
+[2024.03.20-08.09.02:748][518]LogActor: Warning: SetReplicates called on non-initialized actor Default__WeaponServerBase. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.09.02:749][518]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NetShootRewrite' in 0.0002 seconds. Added 4 classes and 2 folders.
+[2024.03.20-08.09.02:756][518]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2024.03.20-08.09.03:081][518]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0111 seconds. Added 3825 classes and 928 folders.
+[2024.03.20-08.09.03:088][518]Display: HotReload took  0.4s.
+[2024.03.20-08.09.05:067][523]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2024.03.20-08.10.00:924][696]LogAnalytics: Display: [UEEditor.UnrealEngine.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.27.2-0+++UE4+Release-4.27
+[2024.03.20-08.10.01:228][696]LogEditorSessionSummary: EditorSessionSummary sent report. Type=AbnormalShutdown, SessionId={02D4EE9A-4F5F-3BCE-D42C-EAB00A9F48F6}
+[2024.03.20-08.10.13:650][171]LogTemp: Repeating last play command: 选中的视口
+[2024.03.20-08.10.13:657][171]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.20-08.10.13:662][171]PIE: New page: PIE会话：FirstPersonExampleMap（2024年3月21日 上午12:10:13）
+[2024.03.20-08.10.13:683][171]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2024.03.20-08.10.13:684][171]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.13:694][171]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011081s)
+[2024.03.20-08.10.13:696][171]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2024.03.20-08.10.13:696][171]LogPlayLevel: PIE: World Init took: (0.002162s)
+[2024.03.20-08.10.13:696][171]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013616s)
+[2024.03.20-08.10.13:770][171]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2024.03.20-08.10.13:809][171]LogLoad: Game class is 'BP_GameMode_C'
+[2024.03.20-08.10.13:814][171]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2024.03.20-16.10.13
+[2024.03.20-08.10.13:814][171]LogWorld: Bringing up level for play took: 0.001844
+[2024.03.20-08.10.13:815][171]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2024.03.20-08.10.13:815][171]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2024.03.20-08.10.13:816][171]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2024.03.20-08.10.13:817][171]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2024.03.20-08.10.13:817][171]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.03.20-08.10.13:817][171]LogNet: GameNetDriver IpNetDriver_32 IpNetDriver listening on port 17777
+[2024.03.20-08.10.13:817][171]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2024.03.20-08.10.13:819][171]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2024.03.20-08.10.13:819][171]PIE: 登陆的服务器
+[2024.03.20-08.10.13:819][171]PIE: PIE总开始时间：0.164秒。
+[2024.03.20-08.10.13:821][171]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.20-08.10.13:821][171]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.03.20-08.10.13:821][171]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.20-08.10.13:822][171]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.20-08.10.13:822][171]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.20-08.10.13:822][171]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.20-08.10.13:822][171]LogAudioMixer: Display: Initializing audio mixer.
+[2024.03.20-08.10.13:829][171]LogAudioMixer: Display: 0: FrontLeft
+[2024.03.20-08.10.13:829][171]LogAudioMixer: Display: 1: FrontRight
+[2024.03.20-08.10.13:835][171]LogAudioMixer: Display: Using Audio Device 扬声器 (Realtek High Definition Audio)
+[2024.03.20-08.10.13:836][171]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.20-08.10.13:836][171]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.20-08.10.13:836][171]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.20-08.10.13:839][171]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2024.03.20-08.10.13:839][171]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2024.03.20-08.10.13:839][171]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2024.03.20-08.10.13:849][171]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2024.03.20-08.10.13:849][171]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2024.03.20-08.10.13:849][171]LogInit: FAudioDevice initialized.
+[2024.03.20-08.10.13:849][171]LogAudio: Display: Audio Device (ID: 28) registered with world 'Untitled'.
+[2024.03.20-08.10.13:881][171]LogNet: Browse: 127.0.0.1:17777/Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2024.03.20-08.10.13:881][171]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2024.03.20-08.10.13:881][171]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2024.03.20-08.10.13:881][171]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.03.20-08.10.13:882][171]LogNet: Game client on port 17777, rate 100000
+[2024.03.20-08.10.13:882][171]PIE: 已登陆客户端
+[2024.03.20-08.10.13:883][171]PIE: PIE总开始时间：0.228秒。
+[2024.03.20-08.10.13:891][171]LogOnline: OSS: Creating online subsystem instance for: :Context_42
+[2024.03.20-08.10.14:895][282]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51167
+[2024.03.20-08.10.14:895][282]LogHandshake: SendConnectChallenge. Timestamp: 1.252474, Cookie: 181116003118008056024225140239157059118248251226212043127179
+[2024.03.20-08.10.14:896][282]LogHandshake: SendChallengeResponse. Timestamp: 1.252474, Cookie: 181116003118008056024225140239157059118248251226212043127179
+[2024.03.20-08.10.14:903][283]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:51167
+[2024.03.20-08.10.14:903][283]LogHandshake: SendChallengeAck. InCookie: 181116003118008056024225140239157059118248251226212043127179
+[2024.03.20-08.10.14:903][283]LogNet: Server accepting post-challenge connection from: 127.0.0.1:51167
+[2024.03.20-08.10.14:904][283]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.03.20-08.10.14:904][283]LogNet: NotifyAcceptedConnection: Name: FirstPersonExampleMap, TimeStamp: 03/20/24 16:10:14, [UNetConnection] RemoteAddr: 127.0.0.1:51167, Name: IpConnection_35, Driver: GameNetDriver IpNetDriver_32, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2024.03.20-08.10.14:904][283]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:51167, Name: IpConnection_35, Driver: GameNetDriver IpNetDriver_32, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2024.03.20-08.10.14:905][283]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_34, Driver: PendingNetDriver IpNetDriver_33, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2024.03.20-08.10.14:912][284]LogNet: NotifyAcceptingChannel Control 0 server World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap: Accepted
+[2024.03.20-08.10.14:912][284]LogNet: Remote platform little endian=1
+[2024.03.20-08.10.14:912][284]LogNet: This platform little endian=1
+[2024.03.20-08.10.14:912][284]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2024.03.20-08.10.14:920][285]LogNet: Login request: ?Name=DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F userId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F platform: NULL
+[2024.03.20-08.10.14:920][285]LogNet: Welcomed by server (Level: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap, Game: /Game/NetShoot/Blueprint/BP_GameMode.BP_GameMode_C)
+[2024.03.20-08.10.14:921][285]LogLoad: LoadMap: 127.0.0.1:17777/Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap?game=/Game/NetShoot/Blueprint/BP_GameMode.BP_GameMode_C
+[2024.03.20-08.10.14:921][285]LogWorld: BeginTearingDown for /Temp/Untitled_18
+[2024.03.20-08.10.14:921][285]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2024.03.20-08.10.14:921][285]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.14:944][285]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.03.20-08.10.14:949][285]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2024.03.20-08.10.14:965][285]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.14:976][285]LogAudio: Display: Audio Device (ID: 28) registered with world 'FirstPersonExampleMap'.
+[2024.03.20-08.10.14:977][285]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2024.03.20-08.10.14:979][285]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_1_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2024.03.20-16.10.14
+[2024.03.20-08.10.14:979][285]LogWorld: Bringing up level for play took: 0.001090
+[2024.03.20-08.10.15:154][285]LogLoad: Took 0.232851 seconds to LoadMap(/Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap)
+[2024.03.20-08.10.15:154][285]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2024.03.20-08.10.15:206][286]LogNet: Client netspeed is 100000
+[2024.03.20-08.10.15:206][286]LogNet: Join request: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap?Name=DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F?SplitscreenCount=1
+[2024.03.20-08.10.15:207][286]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2024.03.20-08.10.15:208][286]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2024.03.20-08.10.15:211][286]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.15:212][286]LogBlueprintUserMessages: [FirstPersonExampleMap] Server: zeng
+[2024.03.20-08.10.15:212][286]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2024.03.20-08.10.15:212][286]LogNet: Join succeeded: DESKTOP-6POMQQ5-FFB7
+[2024.03.20-08.10.15:270][288]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.15:270][288]LogBlueprintUserMessages: [FirstPersonExampleMap] Client 1: zeng
+[2024.03.20-08.10.15:270][288]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2024.03.20-08.10.16:219][382]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Client 1: 动画播放
+[2024.03.20-08.10.16:219][382]LogTemp: 播放射击声音
+[2024.03.20-08.10.16:219][382]LogBlueprintUserMessages: [BP_AttackBase_C_0] Client 1: ServerWeaponBase->ClipCurrentAmmon:5
+[2024.03.20-08.10.16:220][382]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.16:229][383]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:4
+[2024.03.20-08.10.18:826][694]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Client 1: 动画播放
+[2024.03.20-08.10.18:826][694]LogTemp: 播放射击声音
+[2024.03.20-08.10.18:826][694]LogBlueprintUserMessages: [BP_AttackBase_C_0] Client 1: ServerWeaponBase->ClipCurrentAmmon:4
+[2024.03.20-08.10.18:827][694]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.18:835][695]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:3
+[2024.03.20-08.10.19:905][823]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Client 1: 动画播放
+[2024.03.20-08.10.19:905][823]LogTemp: 播放射击声音
+[2024.03.20-08.10.19:906][823]LogBlueprintUserMessages: [BP_AttackBase_C_0] Client 1: ServerWeaponBase->ClipCurrentAmmon:3
+[2024.03.20-08.10.19:906][823]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.19:914][824]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:2
+[2024.03.20-08.10.21:010][955]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Client 1: 动画播放
+[2024.03.20-08.10.21:010][955]LogTemp: 播放射击声音
+[2024.03.20-08.10.21:011][955]LogBlueprintUserMessages: [BP_AttackBase_C_0] Client 1: ServerWeaponBase->ClipCurrentAmmon:2
+[2024.03.20-08.10.21:012][955]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.21:019][956]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:1
+[2024.03.20-08.10.22:356][116]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Client 1: 动画播放
+[2024.03.20-08.10.22:356][116]LogTemp: 播放射击声音
+[2024.03.20-08.10.22:356][116]LogBlueprintUserMessages: [BP_AttackBase_C_0] Client 1: ServerWeaponBase->ClipCurrentAmmon:1
+[2024.03.20-08.10.22:357][116]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.22:365][117]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:0
+[2024.03.20-08.10.32:875][368]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.20-08.10.32:875][368]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_1_FirstPersonExampleMap
+[2024.03.20-08.10.32:875][368]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.20-08.10.32:876][368]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.32:883][368]LogNet: World NetDriver shutdown IpNetDriver_33 [GameNetDriver]
+[2024.03.20-08.10.32:883][368]LogNet: DestroyNamedNetDriver IpNetDriver_33 [GameNetDriver]
+[2024.03.20-08.10.32:883][368]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_34, Driver: GameNetDriver IpNetDriver_33, IsServer: NO, PC: BP_Playercontroller_C_0, Owner: BP_Playercontroller_C_0, UniqueId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F, Channels: 12, Time: 2024.03.20-08.10.32
+[2024.03.20-08.10.32:883][368]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_34, Driver: GameNetDriver IpNetDriver_33, IsServer: NO, PC: BP_Playercontroller_C_0, Owner: BP_Playercontroller_C_0, UniqueId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F
+[2024.03.20-08.10.32:883][368]LogExit: GameNetDriver IpNetDriver_33 shut down
+[2024.03.20-08.10.32:885][368]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2024.03.20-08.10.32:885][368]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.20-08.10.32:885][368]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.32:885][368]LogNet: World NetDriver shutdown IpNetDriver_32 [GameNetDriver]
+[2024.03.20-08.10.32:885][368]LogNet: DestroyNamedNetDriver IpNetDriver_32 [GameNetDriver]
+[2024.03.20-08.10.32:886][368]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:51167, Name: IpConnection_35, Driver: GameNetDriver IpNetDriver_32, IsServer: YES, PC: BP_Playercontroller_C_0, Owner: BP_Playercontroller_C_0, UniqueId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F
+[2024.03.20-08.10.32:886][368]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:51167, Name: IpConnection_35, Driver: GameNetDriver IpNetDriver_32, IsServer: YES, PC: BP_Playercontroller_C_0, Owner: BP_Playercontroller_C_0, UniqueId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F, Channels: 12, Time: 2024.03.20-08.10.32
+[2024.03.20-08.10.32:886][368]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:51167, Name: IpConnection_35, Driver: GameNetDriver IpNetDriver_32, IsServer: YES, PC: BP_Playercontroller_C_0, Owner: BP_Playercontroller_C_0, UniqueId: NULL:DESKTOP-6POMQQ5-FFB7D47B46E0D879CD9910A8B0E79D4F
+[2024.03.20-08.10.32:886][368]LogExit: GameNetDriver IpNetDriver_32 shut down
+[2024.03.20-08.10.32:887][368]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.20-08.10.32:909][368]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.32:948][368]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.20-08.10.32:948][368]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2024.03.20-08.10.32:949][368]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2024.03.20-08.10.32:957][368]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2024.03.20-08.10.33:070][369]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2024.03.20-08.10.33:071][369]LogPlayLevel: Display: Destroying online subsystem :Context_42
+[2024.03.20-08.10.37:229][802]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2024.03.20-08.10.38:092][867]LogTemp: Repeating last play command: 选中的视口
+[2024.03.20-08.10.38:098][867]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.20-08.10.38:098][867]PIE: New page: PIE会话：FirstPersonExampleMap（2024年3月21日 上午12:10:38）
+[2024.03.20-08.10.38:123][867]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2024.03.20-08.10.38:123][867]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.38:133][867]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009745s)
+[2024.03.20-08.10.38:134][867]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2024.03.20-08.10.38:134][867]LogPlayLevel: PIE: World Init took: (0.001600s)
+[2024.03.20-08.10.38:134][867]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.011538s)
+[2024.03.20-08.10.38:161][867]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2024.03.20-08.10.38:194][867]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.20-08.10.38:194][867]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.03.20-08.10.38:194][867]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.20-08.10.38:241][867]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.20-08.10.38:241][867]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.20-08.10.38:241][867]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.20-08.10.38:241][867]LogAudioMixer: Display: Initializing audio mixer.
+[2024.03.20-08.10.38:248][867]LogAudioMixer: Display: 0: FrontLeft
+[2024.03.20-08.10.38:248][867]LogAudioMixer: Display: 1: FrontRight
+[2024.03.20-08.10.38:253][867]LogAudioMixer: Display: Using Audio Device 扬声器 (Realtek High Definition Audio)
+[2024.03.20-08.10.38:254][867]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.20-08.10.38:254][867]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.20-08.10.38:254][867]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.20-08.10.38:254][867]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2024.03.20-08.10.38:254][867]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2024.03.20-08.10.38:254][867]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2024.03.20-08.10.38:255][867]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2024.03.20-08.10.38:255][867]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2024.03.20-08.10.38:255][867]LogInit: FAudioDevice initialized.
+[2024.03.20-08.10.38:255][867]LogAudio: Display: Audio Device (ID: 29) registered with world 'FirstPersonExampleMap'.
+[2024.03.20-08.10.38:262][867]LogLoad: Game class is 'BP_GameMode_C'
+[2024.03.20-08.10.38:264][867]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2024.03.20-16.10.38
+[2024.03.20-08.10.38:264][867]LogWorld: Bringing up level for play took: 0.001081
+[2024.03.20-08.10.38:264][867]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2024.03.20-08.10.38:278][867]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2024.03.20-08.10.38:278][867]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2024.03.20-08.10.38:278][867]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2024.03.20-08.10.38:278][867]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2024.03.20-08.10.38:278][867]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2024.03.20-08.10.38:278][867]LogNet: GameNetDriver IpNetDriver_34 IpNetDriver listening on port 17777
+[2024.03.20-08.10.38:278][867]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2024.03.20-08.10.38:278][867]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2024.03.20-08.10.38:278][867]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2024.03.20-08.10.38:280][867]LogActor: Warning: SetReplicates called on non-initialized actor BP_ServerWeaponBase_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2024.03.20-08.10.38:280][867]LogBlueprintUserMessages: [FirstPersonExampleMap] Server: zeng
+[2024.03.20-08.10.38:280][867]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2024.03.20-08.10.38:280][867]PIE: 登陆的服务器
+[2024.03.20-08.10.38:281][867]PIE: PIE总开始时间：0.185秒。
+[2024.03.20-08.10.40:457][109]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:4
+[2024.03.20-08.10.40:457][109]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Server: 动画播放
+[2024.03.20-08.10.40:457][109]LogTemp: 播放射击声音
+[2024.03.20-08.10.40:457][109]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:4
+[2024.03.20-08.10.40:458][109]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.40:843][155]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:3
+[2024.03.20-08.10.40:843][155]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Server: 动画播放
+[2024.03.20-08.10.40:843][155]LogTemp: 播放射击声音
+[2024.03.20-08.10.40:843][155]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:3
+[2024.03.20-08.10.40:844][155]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.41:077][183]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:2
+[2024.03.20-08.10.41:077][183]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Server: 动画播放
+[2024.03.20-08.10.41:077][183]LogTemp: 播放射击声音
+[2024.03.20-08.10.41:077][183]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:2
+[2024.03.20-08.10.41:078][183]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.41:301][210]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:1
+[2024.03.20-08.10.41:301][210]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Server: 动画播放
+[2024.03.20-08.10.41:301][210]LogTemp: 播放射击声音
+[2024.03.20-08.10.41:302][210]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:1
+[2024.03.20-08.10.41:303][210]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.41:469][230]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:0
+[2024.03.20-08.10.41:469][230]LogBlueprintUserMessages: [BP_ClientWeaponBase_C_0] Server: 动画播放
+[2024.03.20-08.10.41:469][230]LogTemp: 播放射击声音
+[2024.03.20-08.10.41:470][230]LogBlueprintUserMessages: [BP_AttackBase_C_0] Server: ServerWeaponBase->ClipCurrentAmmon:0
+[2024.03.20-08.10.41:471][230]LogAudio: Warning: Detected orphaned looping sound 'Starter_Birds01'.
+[2024.03.20-08.10.43:846][510]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2024.03.20-08.10.43:846][510]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.20-08.10.43:846][510]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2024.03.20-08.10.43:846][510]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.20-08.10.43:847][510]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.43:855][510]LogNet: World NetDriver shutdown IpNetDriver_34 [GameNetDriver]
+[2024.03.20-08.10.43:855][510]LogNet: DestroyNamedNetDriver IpNetDriver_34 [GameNetDriver]
+[2024.03.20-08.10.43:855][510]LogExit: GameNetDriver IpNetDriver_34 shut down
+[2024.03.20-08.10.43:856][510]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.20-08.10.43:865][510]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.20-08.10.43:894][510]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.03.20-08.10.43:894][510]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2024.03.20-08.10.43:895][510]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2024.03.20-08.10.43:897][510]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.20-08.10.43:900][510]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2024.03.20-08.10.43:948][511]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2024.03.20-08.12.00:818][921]LogHttp: Warning: 0000027522BEEB00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: request failed, libcurl error: 0 (No error)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x274e936c610 [can pipeline])
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 1 (Re-using existing connection! (#90) with host datarouter.ol.epicgames.com)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (34.192.29.34) port 443 (#90))
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 3 (We are completely uploaded and fine)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 7 (Closing connection 90)
+[2024.03.20-08.12.00:819][921]LogHttp: Warning: 0000027522BEEB00: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2024.03.20-08.12.01:161][922]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B21620DC4-4EA1-D33A-FA86-A9B136A6E09D%7D&AppID=UEEditor.UnrealEngine.Release&AppVersion=4.27.2-0%2B%2B%2BUE4%2BRelease-4.27&UserID=f61cec974bbe29c05ec7b2ba0361775e%7C4908a8cb310042098503c39bd6fc1007%7Cd12d3385-9d43-4bbc-8627-fc5be8e0e98f&AppEnvironment=datacollector-binary&UploadType=eteventstream

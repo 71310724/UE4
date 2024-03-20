@@ -39,7 +39,14 @@ private: \
 	friend struct Z_Construct_UClass_AWeaponServerBase_Statics; \
 public: \
 	DECLARE_CLASS(AWeaponServerBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/NetShootRewrite"), NO_API) \
-	DECLARE_SERIALIZER(AWeaponServerBase)
+	DECLARE_SERIALIZER(AWeaponServerBase) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		ClipCurrentAmmon=NETFIELD_REP_START, \
+		NETFIELD_REP_END=ClipCurrentAmmon	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_INCLASS \
@@ -48,7 +55,14 @@ private: \
 	friend struct Z_Construct_UClass_AWeaponServerBase_Statics; \
 public: \
 	DECLARE_CLASS(AWeaponServerBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/NetShootRewrite"), NO_API) \
-	DECLARE_SERIALIZER(AWeaponServerBase)
+	DECLARE_SERIALIZER(AWeaponServerBase) \
+	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override; \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		ClipCurrentAmmon=NETFIELD_REP_START, \
+		NETFIELD_REP_END=ClipCurrentAmmon	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_STANDARD_CONSTRUCTORS \

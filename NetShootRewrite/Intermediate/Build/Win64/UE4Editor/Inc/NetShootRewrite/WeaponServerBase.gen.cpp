@@ -322,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		{ "ToolTip", "\xe6\x9e\xaa\xe4\xbd\x93\xe6\x80\xbb\xe7\x9a\x84\xe5\xad\x90\xe5\xbc\xb9" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon = { "ClipCurrentAmmon", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, ClipCurrentAmmon), METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon = { "ClipCurrentAmmon", nullptr, (EPropertyFlags)0x0010000000000021, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, ClipCurrentAmmon), METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon_MetaData[] = {
 		{ "Category", "WeaponServerBase" },
@@ -401,12 +401,22 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeaponServerBase, 561535154);
+	IMPLEMENT_CLASS(AWeaponServerBase, 1046567837);
 	template<> NETSHOOTREWRITE_API UClass* StaticClass<AWeaponServerBase>()
 	{
 		return AWeaponServerBase::StaticClass();
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AWeaponServerBase(Z_Construct_UClass_AWeaponServerBase, &AWeaponServerBase::StaticClass, TEXT("/Script/NetShootRewrite"), TEXT("AWeaponServerBase"), false, nullptr, nullptr, nullptr);
+
+	void AWeaponServerBase::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
+	{
+		static const FName Name_ClipCurrentAmmon(TEXT("ClipCurrentAmmon"));
+
+		const bool bIsValid = true
+			&& Name_ClipCurrentAmmon == ClassReps[(int32)ENetFields_Private::ClipCurrentAmmon].Property->GetFName();
+
+		checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in AWeaponServerBase"));
+	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AWeaponServerBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER

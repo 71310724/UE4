@@ -6,6 +6,7 @@
 #include "NetshootCharacterBase.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Net/UnrealNetwork.h"
 
 
 // Sets default values
@@ -34,6 +35,8 @@ void AWeaponServerBase::BeginPlay()
 	Super::BeginPlay();
 	
 }
+
+
 
 // Called every frame
 void AWeaponServerBase::Tick(float DeltaTime)
@@ -70,4 +73,9 @@ void AWeaponServerBase::MuliticastShootingEffect_Implementation()
 bool AWeaponServerBase::MuliticastShootingEffect_Validate()
 {
 	return true;
+}
+
+void AWeaponServerBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	DOREPLIFETIME_CONDITION(AWeaponServerBase,ClipCurrentAmmon,COND_None);
 }

@@ -30,6 +30,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -45,7 +46,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	int32 GunCurrentAmmon;   //枪体总的子弹
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere,Replicated)
 	int32  ClipCurrentAmmon;  //当前弹夹子弹
 
 	UPROPERTY(EditAnywhere)
