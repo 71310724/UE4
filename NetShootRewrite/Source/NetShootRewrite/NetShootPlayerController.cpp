@@ -6,4 +6,7 @@
 void ANetShootPlayerController::PlayCameraShake(TSubclassOf<UCameraShakeBase> CameraShake)
 {
 	ClientPlayCameraShake(CameraShake);
+
+	
 }
+

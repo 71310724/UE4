@@ -25,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 	NETSHOOTREWRITE_API UClass* Z_Construct_UClass_AWeaponClientBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 // End Cross Module References
 	static UEnum* EWeaponType_StaticEnum()
 	{
@@ -82,6 +84,18 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		}
 		return ReturnEnum;
 	}
+	DEFINE_FUNCTION(AWeaponServerBase::execMuliticastShootingEffect)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->MuliticastShootingEffect_Validate())
+		{
+			RPC_ValidateFailed(TEXT("MuliticastShootingEffect_Validate"));
+			return;
+		}
+		P_THIS->MuliticastShootingEffect_Implementation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AWeaponServerBase::execOnComponetBeginOverlap)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
@@ -95,13 +109,41 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		P_THIS->OnComponetBeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
+	static FName NAME_AWeaponServerBase_MuliticastShootingEffect = FName(TEXT("MuliticastShootingEffect"));
+	void AWeaponServerBase::MuliticastShootingEffect()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AWeaponServerBase_MuliticastShootingEffect),NULL);
+	}
 	void AWeaponServerBase::StaticRegisterNativesAWeaponServerBase()
 	{
 		UClass* Class = AWeaponServerBase::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "MuliticastShootingEffect", &AWeaponServerBase::execMuliticastShootingEffect },
 			{ "OnComponetBeginOverlap", &AWeaponServerBase::execOnComponetBeginOverlap },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWeaponServerBase, nullptr, "MuliticastShootingEffect", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80024CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AWeaponServerBase_OnComponetBeginOverlap_Statics
 	{
@@ -205,6 +247,18 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_WeaponClient;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GunCurrentAmmon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_GunCurrentAmmon;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ClipCurrentAmmon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ClipCurrentAmmon;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ClipMaxAmmon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ClipMaxAmmon;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerWeaponMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ServerWeaponMesh;
@@ -212,6 +266,14 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SphereCollision_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SphereCollision;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireServerPartical_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireServerPartical;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Sound3D_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Sound3D;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -221,6 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NetShootRewrite,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWeaponServerBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWeaponServerBase_MuliticastShootingEffect, "MuliticastShootingEffect" }, // 632773674
 		{ &Z_Construct_UFunction_AWeaponServerBase_OnComponetBeginOverlap, "OnComponetBeginOverlap" }, // 3159466034
 	};
 #if WITH_METADATA
@@ -245,6 +308,31 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_WeaponClient = { "WeaponClient", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, WeaponClient), Z_Construct_UClass_AWeaponClientBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_WeaponClient_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_WeaponClient_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_GunCurrentAmmon_MetaData[] = {
+		{ "Category", "WeaponServerBase" },
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_GunCurrentAmmon = { "GunCurrentAmmon", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, GunCurrentAmmon), METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_GunCurrentAmmon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_GunCurrentAmmon_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData[] = {
+		{ "Category", "WeaponServerBase" },
+		{ "Comment", "//\xe6\x9e\xaa\xe4\xbd\x93\xe6\x80\xbb\xe7\x9a\x84\xe5\xad\x90\xe5\xbc\xb9\n" },
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+		{ "ToolTip", "\xe6\x9e\xaa\xe4\xbd\x93\xe6\x80\xbb\xe7\x9a\x84\xe5\xad\x90\xe5\xbc\xb9" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon = { "ClipCurrentAmmon", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, ClipCurrentAmmon), METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon_MetaData[] = {
+		{ "Category", "WeaponServerBase" },
+		{ "Comment", "//\xe5\xbd\x93\xe5\x89\x8d\xe5\xbc\xb9\xe5\xa4\xb9\xe5\xad\x90\xe5\xbc\xb9\n" },
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+		{ "ToolTip", "\xe5\xbd\x93\xe5\x89\x8d\xe5\xbc\xb9\xe5\xa4\xb9\xe5\xad\x90\xe5\xbc\xb9" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon = { "ClipMaxAmmon", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, ClipMaxAmmon), METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ServerWeaponMesh_MetaData[] = {
 		{ "Category", "WeaponServerBase" },
 		{ "EditInline", "true" },
@@ -260,12 +348,31 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_SphereCollision = { "SphereCollision", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, SphereCollision), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_SphereCollision_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_SphereCollision_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_FireServerPartical_MetaData[] = {
+		{ "Category", "WeaponServerBase" },
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_FireServerPartical = { "FireServerPartical", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, FireServerPartical), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_FireServerPartical_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_FireServerPartical_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_Sound3D_MetaData[] = {
+		{ "Category", "WeaponServerBase" },
+		{ "ModuleRelativePath", "WeaponServerBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_Sound3D = { "Sound3D", nullptr, (EPropertyFlags)0x0020080000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWeaponServerBase, Sound3D), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_Sound3D_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_Sound3D_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWeaponServerBase_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_KindofWeapon_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_KindofWeapon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_WeaponClient,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_GunCurrentAmmon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipCurrentAmmon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ClipMaxAmmon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_ServerWeaponMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_SphereCollision,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_FireServerPartical,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWeaponServerBase_Statics::NewProp_Sound3D,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AWeaponServerBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWeaponServerBase>::IsAbstract,
@@ -294,7 +401,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponServerBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWeaponServerBase, 687920192);
+	IMPLEMENT_CLASS(AWeaponServerBase, 561535154);
 	template<> NETSHOOTREWRITE_API UClass* StaticClass<AWeaponServerBase>()
 	{
 		return AWeaponServerBase::StaticClass();

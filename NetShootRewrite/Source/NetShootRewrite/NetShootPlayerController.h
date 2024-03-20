@@ -15,5 +15,10 @@ class NETSHOOTREWRITE_API ANetShootPlayerController : public APlayerController
 	GENERATED_BODY()
 public:
 	void  PlayCameraShake(TSubclassOf<class UCameraShakeBase >    CameraShake);
+
+   UFUNCTION(BlueprintImplementableEvent,Category="PLayerUI")
+	void CreatPlayerUI();
+    UFUNCTION(BlueprintImplementableEvent,Category="PLayerUI")
+	void DoCrosshairRecoil();
 	
 };

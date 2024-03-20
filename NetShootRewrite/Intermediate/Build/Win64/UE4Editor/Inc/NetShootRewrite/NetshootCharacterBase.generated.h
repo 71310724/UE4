@@ -8,6 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
+struct FRotator;
 #ifdef NETSHOOTREWRITE_NetshootCharacterBase_generated_h
 #error "NetshootCharacterBase.generated.h already included, missing '#pragma once' in NetshootCharacterBase.h"
 #endif
@@ -15,6 +17,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_SPARSE_DATA
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_RPC_WRAPPERS \
+	virtual bool ServerFireRifleWeapon_Validate(FVector , FRotator , bool ); \
+	virtual void ServerFireRifleWeapon_Implementation(FVector CameraLoction, FRotator CamereRotation, bool IsMoving); \
 	virtual void ClientEquitFPArmPrimary_Implementation(); \
 	virtual bool ServerNormalSpeedWalk_Validate(); \
 	virtual void ServerNormalSpeedWalk_Implementation(); \
@@ -22,6 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual void ServerLowSpeedWalk_Implementation(); \
 	virtual void ClientFire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServerFireRifleWeapon); \
 	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
 	DECLARE_FUNCTION(execServerLowSpeedWalk); \
@@ -32,6 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void ClientFire_Implementation(); \
  \
+	DECLARE_FUNCTION(execServerFireRifleWeapon); \
 	DECLARE_FUNCTION(execClientEquitFPArmPrimary); \
 	DECLARE_FUNCTION(execServerNormalSpeedWalk); \
 	DECLARE_FUNCTION(execServerLowSpeedWalk); \
@@ -39,7 +45,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execStopFirePrimary);
 
 
-#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_EVENT_PARMS
+#define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_EVENT_PARMS \
+	struct NetshootCharacterBase_eventServerFireRifleWeapon_Parms \
+	{ \
+		FVector CameraLoction; \
+		FRotator CamereRotation; \
+		bool IsMoving; \
+	};
+
+
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_CALLBACK_WRAPPERS
 #define NetShootRewrite_Source_NetShootRewrite_NetshootCharacterBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \

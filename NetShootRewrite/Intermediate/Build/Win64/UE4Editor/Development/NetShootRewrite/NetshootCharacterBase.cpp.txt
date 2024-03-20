@@ -33,3 +33,6 @@ C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Cla
 C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameSession.generated.h
 D:\GitHub\NetShootRewrite\Source\NetShootRewrite\NetShootPlayerController.h
 D:\GitHub\NetShootRewrite\Intermediate\Build\Win64\UE4Editor\Inc\NetShootRewrite\NetShootPlayerController.generated.h
+C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files (x86)\UE4.27\UnrealEngine-4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h

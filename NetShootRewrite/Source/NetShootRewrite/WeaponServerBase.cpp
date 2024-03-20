@@ -5,6 +5,8 @@
 
 #include "NetshootCharacterBase.h"
 #include "Components/SphereComponent.h"
+#include "Kismet/GameplayStatics.h"
+
 
 // Sets default values
 AWeaponServerBase::AWeaponServerBase()
@@ -52,4 +54,20 @@ void AWeaponServerBase::OnComponetBeginOverlap(UPrimitiveComponent* OverlappedCo
 			Player->EquipPrimary(this);
 		}
 	}
+}
+
+void AWeaponServerBase::MuliticastShootingEffect_Implementation()
+{
+	if (GetOwner()!=UGameplayStatics::GetPlayerCharacter(GetWorld(),0))
+	{
+		UGameplayStatics::SpawnEmitterAttached(FireServerPartical,ServerWeaponMesh,TEXT("Muzzle"));
+
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(),Sound3D,GetActorLocation(),GetActorRotation());
+		
+	}
+}
+
+bool AWeaponServerBase::MuliticastShootingEffect_Validate()
+{
+	return true;
 }

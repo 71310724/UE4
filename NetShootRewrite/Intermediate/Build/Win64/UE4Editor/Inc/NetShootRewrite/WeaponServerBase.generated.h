@@ -18,15 +18,21 @@ struct FHitResult;
 
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_SPARSE_DATA
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_RPC_WRAPPERS \
+	virtual bool MuliticastShootingEffect_Validate(); \
+	virtual void MuliticastShootingEffect_Implementation(); \
  \
+	DECLARE_FUNCTION(execMuliticastShootingEffect); \
 	DECLARE_FUNCTION(execOnComponetBeginOverlap);
 
 
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execMuliticastShootingEffect); \
 	DECLARE_FUNCTION(execOnComponetBeginOverlap);
 
 
+#define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_EVENT_PARMS
+#define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_CALLBACK_WRAPPERS
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeaponServerBase(); \
@@ -71,16 +77,22 @@ public: \
 
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ServerWeaponMesh() { return STRUCT_OFFSET(AWeaponServerBase, ServerWeaponMesh); } \
-	FORCEINLINE static uint32 __PPO__SphereCollision() { return STRUCT_OFFSET(AWeaponServerBase, SphereCollision); }
+	FORCEINLINE static uint32 __PPO__SphereCollision() { return STRUCT_OFFSET(AWeaponServerBase, SphereCollision); } \
+	FORCEINLINE static uint32 __PPO__FireServerPartical() { return STRUCT_OFFSET(AWeaponServerBase, FireServerPartical); } \
+	FORCEINLINE static uint32 __PPO__Sound3D() { return STRUCT_OFFSET(AWeaponServerBase, Sound3D); }
 
 
-#define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_16_PROLOG
+#define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_16_PROLOG \
+	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_EVENT_PARMS
+
+
 #define NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_PRIVATE_PROPERTY_OFFSET \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_SPARSE_DATA \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_RPC_WRAPPERS \
+	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_CALLBACK_WRAPPERS \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_INCLASS \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_STANDARD_CONSTRUCTORS \
 public: \
@@ -93,6 +105,7 @@ public: \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_PRIVATE_PROPERTY_OFFSET \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_SPARSE_DATA \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_CALLBACK_WRAPPERS \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_INCLASS_NO_PURE_DECLS \
 	NetShootRewrite_Source_NetShootRewrite_WeaponServerBase_h_19_ENHANCED_CONSTRUCTORS \
 private: \

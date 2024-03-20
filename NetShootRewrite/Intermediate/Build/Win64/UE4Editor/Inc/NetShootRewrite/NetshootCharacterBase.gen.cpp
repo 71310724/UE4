@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	NETSHOOTREWRITE_API UClass* Z_Construct_UClass_ANetshootCharacterBase();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_NetShootRewrite();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimInstance_NoRegister();
@@ -25,6 +27,21 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	NETSHOOTREWRITE_API UClass* Z_Construct_UClass_AWeaponClientBase_NoRegister();
 	NETSHOOTREWRITE_API UEnum* Z_Construct_UEnum_NetShootRewrite_EWeaponType();
 // End Cross Module References
+	DEFINE_FUNCTION(ANetshootCharacterBase::execServerFireRifleWeapon)
+	{
+		P_GET_STRUCT(FVector,Z_Param_CameraLoction);
+		P_GET_STRUCT(FRotator,Z_Param_CamereRotation);
+		P_GET_UBOOL(Z_Param_IsMoving);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		if (!P_THIS->ServerFireRifleWeapon_Validate(Z_Param_CameraLoction,Z_Param_CamereRotation,Z_Param_IsMoving))
+		{
+			RPC_ValidateFailed(TEXT("ServerFireRifleWeapon_Validate"));
+			return;
+		}
+		P_THIS->ServerFireRifleWeapon_Implementation(Z_Param_CameraLoction,Z_Param_CamereRotation,Z_Param_IsMoving);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ANetshootCharacterBase::execClientEquitFPArmPrimary)
 	{
 		P_FINISH;
@@ -80,6 +97,15 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	{
 		ProcessEvent(FindFunctionChecked(NAME_ANetshootCharacterBase_ClientFire),NULL);
 	}
+	static FName NAME_ANetshootCharacterBase_ServerFireRifleWeapon = FName(TEXT("ServerFireRifleWeapon"));
+	void ANetshootCharacterBase::ServerFireRifleWeapon(FVector CameraLoction, FRotator CamereRotation, bool IsMoving)
+	{
+		NetshootCharacterBase_eventServerFireRifleWeapon_Parms Parms;
+		Parms.CameraLoction=CameraLoction;
+		Parms.CamereRotation=CamereRotation;
+		Parms.IsMoving=IsMoving ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_ANetshootCharacterBase_ServerFireRifleWeapon),&Parms);
+	}
 	static FName NAME_ANetshootCharacterBase_ServerLowSpeedWalk = FName(TEXT("ServerLowSpeedWalk"));
 	void ANetshootCharacterBase::ServerLowSpeedWalk()
 	{
@@ -96,6 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ClientEquitFPArmPrimary", &ANetshootCharacterBase::execClientEquitFPArmPrimary },
 			{ "ClientFire", &ANetshootCharacterBase::execClientFire },
+			{ "ServerFireRifleWeapon", &ANetshootCharacterBase::execServerFireRifleWeapon },
 			{ "ServerLowSpeedWalk", &ANetshootCharacterBase::execServerLowSpeedWalk },
 			{ "ServerNormalSpeedWalk", &ANetshootCharacterBase::execServerNormalSpeedWalk },
 			{ "StopFirePrimary", &ANetshootCharacterBase::execStopFirePrimary },
@@ -143,6 +170,45 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetshootCharacterBase_ClientFire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics
+	{
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CameraLoction;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_CamereRotation;
+		static void NewProp_IsMoving_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsMoving;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_CameraLoction = { "CameraLoction", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetshootCharacterBase_eventServerFireRifleWeapon_Parms, CameraLoction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_CamereRotation = { "CamereRotation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(NetshootCharacterBase_eventServerFireRifleWeapon_Parms, CamereRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_IsMoving_SetBit(void* Obj)
+	{
+		((NetshootCharacterBase_eventServerFireRifleWeapon_Parms*)Obj)->IsMoving = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_IsMoving = { "IsMoving", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(NetshootCharacterBase_eventServerFireRifleWeapon_Parms), &Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_IsMoving_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_CameraLoction,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_CamereRotation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::NewProp_IsMoving,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "NetshootCharacterBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANetshootCharacterBase, nullptr, "ServerFireRifleWeapon", nullptr, nullptr, sizeof(NetshootCharacterBase_eventServerFireRifleWeapon_Parms), Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80A20CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -263,6 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANetshootCharacterBase_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ANetshootCharacterBase_ClientEquitFPArmPrimary, "ClientEquitFPArmPrimary" }, // 3810375867
 		{ &Z_Construct_UFunction_ANetshootCharacterBase_ClientFire, "ClientFire" }, // 4289661838
+		{ &Z_Construct_UFunction_ANetshootCharacterBase_ServerFireRifleWeapon, "ServerFireRifleWeapon" }, // 3996337474
 		{ &Z_Construct_UFunction_ANetshootCharacterBase_ServerLowSpeedWalk, "ServerLowSpeedWalk" }, // 1193230758
 		{ &Z_Construct_UFunction_ANetshootCharacterBase_ServerNormalSpeedWalk, "ServerNormalSpeedWalk" }, // 972865120
 		{ &Z_Construct_UFunction_ANetshootCharacterBase_StopFirePrimary, "StopFirePrimary" }, // 1392911521
@@ -366,7 +433,7 @@ void EmptyLinkFunctionForGeneratedCodeNetshootCharacterBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANetshootCharacterBase, 3492285965);
+	IMPLEMENT_CLASS(ANetshootCharacterBase, 3079954159);
 	template<> NETSHOOTREWRITE_API UClass* StaticClass<ANetshootCharacterBase>()
 	{
 		return ANetshootCharacterBase::StaticClass();

@@ -79,6 +79,11 @@ public:
 	UFUNCTION(NetMulticast,Reliable)
 	void ClientEquitFPArmPrimary();
 	void  ClientEquitFPArmPrimary_Implementation();
+
+	UFUNCTION(Server,Reliable,WithValidation)
+	void ServerFireRifleWeapon(FVector CameraLoction,FRotator CamereRotation ,bool IsMoving);
+	bool ServerFireRifleWeapon_Validate(FVector CameraLoction,FRotator CamereRotation ,bool IsMoving);
+	void  ServerFireRifleWeapon_Implementation(FVector CameraLoction,FRotator CamereRotation ,bool IsMoving);
 	
 	
 	void EquipPrimary(class AWeaponServerBase* ServerWeapon);

@@ -9,6 +9,7 @@
 #include "WeaponServerBase.h"
 #include "GameFramework/GameSession.h"
 #include "NetShootPlayerController.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 // Sets default values
 ANetshootCharacterBase::ANetshootCharacterBase()
@@ -34,6 +35,7 @@ ANetshootCharacterBase::ANetshootCharacterBase()
 
 void ANetshootCharacterBase::MoveForward(float AxisValue)
 {
+	
 	AddMovementInput(GetActorForwardVector(),AxisValue,false);
 }
 
@@ -94,6 +96,13 @@ void ANetshootCharacterBase::BeginPlay()
 	ClientArmAnimWEapon=FPArmMesh->GetAnimInstance();
 
 	NetPlayerController=Cast<ANetShootPlayerController>(GetController());
+
+	if (NetPlayerController)
+	{
+		NetPlayerController->CreatPlayerUI();
+        
+	}
+    
 	
 }
 
@@ -103,7 +112,21 @@ void ANetshootCharacterBase::BeginPlay()
 // ak开火
 void ANetshootCharacterBase::FireWeaponPrimary()
 {
-	ClientFire();
+	if (ServerWeaponBase->ClipCurrentAmmon>0)
+	{
+		ServerFireRifleWeapon(PlayerCamera->GetComponentLocation(),PlayerCamera->GetComponentRotation(),false);
+	
+		ClientFire();
+
+		UKismetSystemLibrary::PrintString(this,FString::Printf(TEXT("ServerWeaponBase->ClipCurrentAmmon:%d"),ServerWeaponBase->ClipCurrentAmmon));
+	}
+
+	
+	
+
+	
+	
+	
 }
 // ak停止开火
 void ANetshootCharacterBase::StopFirePrimary()
@@ -135,6 +158,11 @@ void ANetshootCharacterBase::ClientFire_Implementation()
 
 		// 播放屏幕抖动cameraShake
 		NetPlayerController->PlayCameraShake(CurrentClientWeapon->CameraShakeClass);
+		//播放缩放十字的动画
+		NetPlayerController->DoCrosshairRecoil();
+
+		
+		
 	}
 
 
@@ -227,9 +255,28 @@ void ANetshootCharacterBase::ClientEquitFPArmPrimary_Implementation()
 			ClientWeaponeBase=GetWorld()->SpawnActor<AWeaponClientBase>(ServerWeaponBase->WeaponClient,GetTransform(),SpawnParameters);
 			ClientWeaponeBase->AttachToComponent(FPArmMesh,FAttachmentTransformRules::SnapToTargetNotIncludingScale,TEXT("hand_r_Client"));
 		}
-       
+
+		UKismetSystemLibrary::PrintString(GetWorld(),TEXT("zeng")); 
 	}
 }
+
+void ANetshootCharacterBase::ServerFireRifleWeapon_Implementation(FVector CameraLoction, FRotator CamereRotation,
+	bool IsMoving)
+{
+	
+	ServerWeaponBase->MuliticastShootingEffect();
+
+	ServerWeaponBase->ClipCurrentAmmon-=1;
+
+	UKismetSystemLibrary::PrintString(this,FString::Printf(TEXT("ServerWeaponBase->ClipCurrentAmmon:%d"),ServerWeaponBase->ClipCurrentAmmon));
+}
+
+bool ANetshootCharacterBase::ServerFireRifleWeapon_Validate(FVector CameraLoction, FRotator CamereRotation,
+	bool IsMoving)
+{
+	return true;
+}
+
 
 void ANetshootCharacterBase::EquipPrimary(AWeaponServerBase* ServerWeapon)
 {

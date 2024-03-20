@@ -36,7 +36,20 @@ public:
    UFUNCTION()
 	void OnComponetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
 
-    
+	UFUNCTION(NetMulticast,Reliable,WithValidation)
+	void MuliticastShootingEffect();
+	void MuliticastShootingEffect_Implementation();
+	bool MuliticastShootingEffect_Validate();
+	
+
+	UPROPERTY(EditAnywhere)
+	int32 GunCurrentAmmon;   //枪体总的子弹
+
+	UPROPERTY(EditAnywhere)
+	int32  ClipCurrentAmmon;  //当前弹夹子弹
+
+	UPROPERTY(EditAnywhere)
+	int32  ClipMaxAmmon;
 	
 protected:
   UPROPERTY(EditAnywhere)
@@ -44,6 +57,15 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class USphereComponent*  SphereCollision;
 
+	UPROPERTY(EditAnywhere)
+	class UParticleSystem*  FireServerPartical;
+
+	UPROPERTY(EditAnywhere)
+	class USoundBase*  Sound3D;
+
+	
 };
 
  
+
+
